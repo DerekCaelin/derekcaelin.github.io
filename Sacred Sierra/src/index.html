@@ -475,7 +475,7 @@
                 url: url + suffix
             }
         }
-
+        mapboxgl.accessToken = 'pk.eyJ1IjoibWJ4c29sdXRpb25zIiwiYSI6ImNrMm01aG9hdTBlZGwzbXQ1ZXVrNHNmejAifQ.QHQA0N6XPWddCXtvoODHZg';
         var map = new mapboxgl.Map({
             container: 'map',
             style: config.style,
@@ -483,6 +483,7 @@
             zoom: config.chapters[0].location.zoom,
             bearing: config.chapters[0].location.bearing,
             pitch: config.chapters[0].location.pitch,
+           // use3dTerrain: true, //set true for enabling 3D maps.
             transformRequest: transformRequest,
             // set custom projection
             projection: config.projection,
@@ -521,7 +522,8 @@
         var scroller = scrollama();
 
         map.on("load", function () {
-            if (config.use3dTerrain) {
+            
+                //updatePosition();
                 map.addSource('mapbox-dem', {
                     'type': 'raster-dem',
                     'url': 'mapbox://mapbox.mapbox-terrain-dem-v1',
@@ -541,7 +543,7 @@
                         'sky-atmosphere-sun-intensity': 15
                     }
                 });
-            };
+           
 
             // add custom layers
             if (config.useCustomLayers) {
@@ -586,6 +588,7 @@
                     // Incase you do not want to have a dynamic inset map,
                     // rather want to keep it a static view but still change the
                     // bbox as main map move: comment out the below if section.
+                    /*
                     if (config.inset && !config.legend) {
                         if (chapter.location.zoom < 5) {
                             insetMap.flyTo({ center: chapter.location.center, zoom: 0 });
@@ -600,6 +603,7 @@
                     if (chapter.onChapterEnter.length > 0) {
                         chapter.onChapterEnter.forEach(setLayerOpacity);
                     }
+                    */
 
                     // set interactive properties for chapters set as mapInteractive = true
                     if (chapter.mapInteractive) {
@@ -607,6 +611,7 @@
                         map.dragPan.enable();
                         map.doubleClickZoom.enable();
                         map.getCanvas().style.cursor = 'grab';
+        
                     } else {
                         if (map.hasControl(navigation)) {
                             map.removeControl(navigation);
@@ -643,7 +648,8 @@
                     if (chapter.onChapterExit.length > 0) {
                         chapter.onChapterExit.forEach(setLayerOpacity);
                     }
-                });
+                }); 
+                
         });
 
         //Helper functions for insetmap

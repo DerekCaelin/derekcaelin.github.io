@@ -1,9 +1,18 @@
+
+
+
 var config = {
-   // style: 'mapbox://styles/mapbox/satellite-v9',
-    style: 'mapbox://styles/derekcaelintm/cl750jezf000l14lozbesd9rn',
+   style: 'mapbox://styles/mapbox/satellite-v9',
+   //style: 'mapbox://styles/derekcaelintm/cl750jezf000l14lozbesd9rn',
    // style: 'mapbox://styles/mapbox-map-design/ckhqrf2tz0dt119ny6azh975y',
    // style: 'mapbox://styles/mapbox/streets-v11',
-    accessToken: 'pk.eyJ1IjoiZGVyZWtjYWVsaW50bSIsImEiOiJjbDZxd2UyOGMwYWttM2psam1vMW1wcHVvIn0.Nv5ZZQ5Fu8_lTJ2FWEXABA',
+    
+    //mine
+    accessToken: 'pk.eyJ1IjoiZGVyZWtjYWVsaW50bSIsImEiOiJja2dtcGp6ZTQwM3F3MnlwMTR1cHJya202In0.YeLrbEMIIvr3Ev0Nb4cs3A',
+    
+    //helper's
+    //accessToken: 'pk.eyJ1IjoibWJ4c29sdXRpb25zIiwiYSI6ImNrMm01aG9hdTBlZGwzbXQ1ZXVrNHNmejAifQ.QHQA0N6XPWddCXtvoODHZg',
+
     showMarkers: false,
     markerColor: '#3FB1CE',
     projection: 'equirectangular',
@@ -23,6 +32,8 @@ var config = {
     mobileview: '<div id="rotate-mobile"><em>For optimal viewing of this storytelling map on mobile, rotate your device to a horizontal orientation.</em><br><br><img src="images/device.png">', // to add custom messaging in the header for mobile devices
     footer: 'Source: source citations, etc.<br> Created using <a href="https://github.com/mapbox/storytelling" target="_blank">Mapbox Storytelling</a> template.',
     chapters: [
+
+        
         {
             id: 'introduction',
             alignment: 'left',
@@ -114,10 +125,9 @@ var config = {
                 zoom: 11.07,
                 pitch: 60,
                 bearing: 0,
-                use3dTerrain: true
             },
             mapAnimation: 'flyTo',
-            
+           // use3dTerrain: true, //set true for enabling 3D maps.
             rotateAnimation: true,
             mapInteractive: false,
             callback: '',
@@ -189,3 +199,4 @@ var config = {
         }
     ]
 };
+
