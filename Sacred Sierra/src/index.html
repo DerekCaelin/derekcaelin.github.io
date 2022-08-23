@@ -7,8 +7,8 @@
     <meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
     <link rel="icon" type="image/x-icon"
         href="https://raw.githubusercontent.com/mapbox/assembly/publisher-staging/src/svgs/mapbox.svg">
-    <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v2.7.0/mapbox-gl.js'></script>
-    <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v2.7.0/mapbox-gl.css' rel='stylesheet' />
+    <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v2.9.2/mapbox-gl.js'></script>
+    <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v2.9.2/mapbox-gl.css' rel='stylesheet' />
     <script src="https://unpkg.com/intersection-observer@0.12.0/intersection-observer.js"></script>
     <script src="https://unpkg.com/scrollama"></script>
     <style>
@@ -530,6 +530,8 @@
                     'tileSize': 512,
                     'maxzoom': 14
                 });
+
+               
                 // add the DEM source as a terrain layer with exaggerated height
                 map.setTerrain({ 'source': 'mapbox-dem', 'exaggeration': 1.5 });
 
@@ -588,7 +590,7 @@
                     // Incase you do not want to have a dynamic inset map,
                     // rather want to keep it a static view but still change the
                     // bbox as main map move: comment out the below if section.
-                    /*
+                 
                     if (config.inset && !config.legend) {
                         if (chapter.location.zoom < 5) {
                             insetMap.flyTo({ center: chapter.location.center, zoom: 0 });
@@ -603,7 +605,6 @@
                     if (chapter.onChapterEnter.length > 0) {
                         chapter.onChapterEnter.forEach(setLayerOpacity);
                     }
-                    */
 
                     // set interactive properties for chapters set as mapInteractive = true
                     if (chapter.mapInteractive) {

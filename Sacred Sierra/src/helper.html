@@ -4,8 +4,8 @@
     <meta charset='utf-8' />
     <title>Position Helper</title>
     <meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
-    <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v2.7.0/mapbox-gl.js'></script>
-    <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v2.7.0/mapbox-gl.css' rel='stylesheet' />
+    <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v2.9.2/mapbox-gl.js'></script>
+    <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v2.9.2/mapbox-gl.css' rel='stylesheet' />
     <script src='https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v4.7.2/mapbox-gl-geocoder.min.js'></script>
     <link rel='stylesheet' href='https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v4.7.2/mapbox-gl-geocoder.css' type='text/css' />
     <style>
@@ -38,10 +38,10 @@
     mapboxgl.accessToken = 'pk.eyJ1IjoibWJ4c29sdXRpb25zIiwiYSI6ImNrMm01aG9hdTBlZGwzbXQ1ZXVrNHNmejAifQ.QHQA0N6XPWddCXtvoODHZg';
     var map = new mapboxgl.Map({
         container: 'map', // container id
-        style: 'mapbox://styles/mapbox/satellite-v9',
+        style: 'mapbox://styles/derekcaelintm/cl76ixj59001m14o52vab3xvr',
         center: [-73.69880, 10.86657], // starting position [lng, lat]
-        zoom: 10, // starting zoom
-        pitch: 70,
+        zoom: 4, // starting zoom
+        pitch: 0,
         bearing: 0
     });
 
@@ -53,6 +53,7 @@
     map.addControl(new mapboxgl.NavigationControl());
     
     map.on("load", function() {
+       
         updatePosition();
         map.addSource('mapbox-dem', {
             'type': 'raster-dem',
