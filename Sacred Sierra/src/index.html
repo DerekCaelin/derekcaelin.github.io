@@ -475,7 +475,7 @@
                 url: url + suffix
             }
         }
-        mapboxgl.accessToken = 'pk.eyJ1IjoibWJ4c29sdXRpb25zIiwiYSI6ImNrMm01aG9hdTBlZGwzbXQ1ZXVrNHNmejAifQ.QHQA0N6XPWddCXtvoODHZg';
+        //mapboxgl.accessToken = 'pk.eyJ1IjoibWJ4c29sdXRpb25zIiwiYSI6ImNrMm01aG9hdTBlZGwzbXQ1ZXVrNHNmejAifQ.QHQA0N6XPWddCXtvoODHZg';
         var map = new mapboxgl.Map({
             container: 'map',
             style: config.style,
@@ -488,6 +488,7 @@
             // set custom projection
             projection: config.projection,
             // make storymap partially interactive
+            spinGlobe: true,
             interactive: true,
             dragPan: false,
             dragRotate: false,
@@ -555,7 +556,8 @@
                     map.addSource(currentSource.name, sourceObj);
                 }
                 for (i = 0; i < externalData.layers.length; i++) {
-                    map.addLayer(externalData.layers[i], 'your-layer'); // arrange layers beneath this layer in your Studio map
+                 //   map.addLayer(externalData.layers[i], 'anei-locations'); // arrange layers beneath this layer in your Studio map
+                 map.addLayer(externalData.layers[i], 'anei-places'); // arrange layers beneath this layer in your Studio map
                 }
             }
 
@@ -636,10 +638,11 @@
                     }
 
                     if (chapter.spinGlobe) {
+                       // console.warn("should spin!");
                         map.once('moveend', () => {
                             const center = map.getCenter();
                             const newCenter = [center.lng + 360, center.lat];
-                            map.easeTo({ center: newCenter, duration: 20000, easing: n => n });
+                            map.easeTo({ center: newCenter, duration: 80000, easing: n => n });
                         });
                     }
                 })

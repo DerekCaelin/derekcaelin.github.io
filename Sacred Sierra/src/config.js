@@ -20,6 +20,7 @@ var config = {
     theme: 'dark',
     use3dTerrain: true, //set true for enabling 3D maps.
     useCustomLayers: true, //set true for enabling custom layers from sources.js
+    spinGlobe: true,
     bookmarks: true,
     chapterReturn: true,
     //title: "Sacred Sierra",
@@ -52,18 +53,50 @@ var config = {
             rotateAnimation: false,
             spinGlobe: true,
             mapInteractive: true,
-            callback: 'browseMap',
+           // callback: 'browseMap',
             onChapterEnter: [
                 {
-                    layer: 'layer-name',
-                    opacity: 1,
-                    duration: 5000
+                    layer: 'anei-locations',
+                    opacity: 0
                  }
             ],
             onChapterExit: [
                 {
-                   layer: 'layer-name',
-                    opacity: 0
+                   
+                }
+            ]
+        },
+        {
+            id: 'slide1',
+            alignment: 'full',
+            hidden: false,
+            title: 'Heart of the World',
+            image: 'images/slide1.jpg',
+            //caption: 'Source image caption',
+            //website: '<a href="https://www.native-land.ca" target="_blank">Native Land website</a>',
+           // author: 'Rudo Kemper, Digital Democracy',
+            //legend: '<span style="font-size: 0.85em;"><em>Indigenous community names on the map courtesy of Native Land Digital</em></span>',
+            //description: 'The Sierra Nevada de Santa Maria is home to more than 50.000 inhabitants among four indigenous communities, direct descendants of the ancient Tayrona culture. This landscapes is a place of worship - no less worthy of veneration than a temple, church, or mosque. As guardians of the earth, they believe it is their duty to protect natural resources and show an ecological alternative to industrialized societies. To the indigenous communities of this Sierra, this landscape is the literal, beating heart of the world.<br><iframe width="100%" height="315" src="https://www.youtube.com/embed/IhYYBcc2lEk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>',
+            location: {
+                center: [-73.54431,  10.32452],
+                zoom: 9.39,
+                pitch: 58.00,
+                bearing: 0,
+                speed: 0.7
+            },
+            mapAnimation: 'flyTo',
+            rotateAnimation: true,
+            spinGlobe: true,
+            mapInteractive: false,
+            callback: '',
+            onChapterEnter: [
+                {
+                   
+                 }
+            ],
+            onChapterExit: [
+                {
+                   
                 }
             ]
         },
@@ -77,7 +110,7 @@ var config = {
             //website: '<a href="https://www.native-land.ca" target="_blank">Native Land website</a>',
            // author: 'Rudo Kemper, Digital Democracy',
             //legend: '<span style="font-size: 0.85em;"><em>Indigenous community names on the map courtesy of Native Land Digital</em></span>',
-            description: 'The Sierra Nevada de Santa Maria is home to more than 50.000 inhabitants among four indigenous communities, direct descendants of the ancient Tayrona culture. This landscapes is a place of worship - no less worthy of veneration than a temple, church, or mosque. As guardians of the earth, they believe it is their duty to protect natural resources and show an ecological alternative to industrialized societies. To the indigenous communities of this Sierra, this landscape is the literal, beating heart of the world.',
+            description: 'The Sierra Nevada de Santa Maria is home to more than 50.000 inhabitants among four indigenous communities, direct descendants of the ancient Tayrona culture. This landscapes is a place of worship - no less worthy of veneration than a temple, church, or mosque. As guardians of the earth, they believe it is their duty to protect natural resources and show an ecological alternative to industrialized societies. To the indigenous communities of this Sierra, this landscape is the literal, beating heart of the world.<br><iframe width="100%" height="315" src="https://www.youtube.com/embed/IhYYBcc2lEk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>',
             location: {
                 center: [-73.54431,  10.32452],
                 zoom: 9.39,
@@ -87,20 +120,17 @@ var config = {
             },
             mapAnimation: 'flyTo',
             rotateAnimation: true,
-            spinGlobe: false,
+            spinGlobe: true,
             mapInteractive: false,
             callback: '',
             onChapterEnter: [
                 {
-                    layer: 'layer-name',
-                    opacity: 1,
-                    duration: 5000
+                   
                  }
             ],
             onChapterExit: [
                 {
-                   layer: 'layer-name',
-                    opacity: 0
+                   
                 }
             ]
         },
@@ -124,14 +154,14 @@ var config = {
             callback: '',
             onChapterEnter: [
                 {
-                    layer: 'anei-1',
-                    opacity: 1
+                    layer: 'anei-locations',
+                   opacity: 1
                  }
             ],
             onChapterExit: [
                 {
-                    layer: 'anei-1',
-                    opacity: 0
+                    layer: 'anei-locations',
+                   opacity: 0
                  }
             ]
         }
