@@ -78,7 +78,13 @@ var config = {
                  {
                     layer: 'rios',
                     opacity: 0
-                 }
+                 },
+                 
+                     {
+                        layer: 'drenaje-doble',
+                       opacity: 0,
+                       
+                     }
             ],
             onChapterExit: [
                 {
@@ -224,6 +230,11 @@ var config = {
                         layer: 'rios',
                        opacity: 1,
                        
+                     },
+                     {
+                        layer: 'drenaje-doble',
+                       opacity: 1,
+                       
                      }
                  
             ],
@@ -232,6 +243,12 @@ var config = {
                     {
                         layer: 'rios',
                        opacity: 0
+                     }
+                     ,
+                     {
+                        layer: 'drenaje-doble',
+                       opacity: 0,
+                       
                      }
                 
             ]
