@@ -269,7 +269,7 @@ var config = {
                 zoom: 8.55,
                 pitch: 54,
                 bearing: 138.40,
-                speed: 0.7
+                speed: 0.2
             },
             mapAnimation: 'flyTo',
             rotateAnimation: false,
@@ -280,7 +280,7 @@ var config = {
                 
                     {
                         layer: 'linea-negra-provectada',
-                       opacity: 1,
+                        opacity: 1,
                        
                      }
                  
