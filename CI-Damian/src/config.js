@@ -1,6 +1,6 @@
 var config = {
-    style: 'mapbox://styles/mapbox/satellite-v9',
-    accessToken: 'pk.eyJ1IjoiZGVyZWtjYWVsaW50bSIsImEiOiJjbDZxd2UyOGMwYWttM2psam1vMW1wcHVvIn0.Nv5ZZQ5Fu8_lTJ2FWEXABA',
+    style: 'mapbox://styles/derekcaelintm/cl95y3x24004d15s1eolj5aah',
+    accessToken: 'pk.eyJ1IjoiZGVyZWtjYWVsaW50bSIsImEiOiJja2dtcGp6ZTQwM3F3MnlwMTR1cHJya202In0.YeLrbEMIIvr3Ev0Nb4cs3A',
     showMarkers: false,
     markerColor: '#3FB1CE',
     projection: 'equirectangular',
@@ -8,14 +8,14 @@ var config = {
     //https://docs.mapbox.com/mapbox-gl-js/example/projections/  
     inset: true,
     legend: true, // if legend is set to true, inset will be disabled.
-    theme: 'light',
+    theme: 'dark',
     use3dTerrain: true, //set true for enabling 3D maps.
     useCustomLayers: false, //set true for enabling custom layers from sources.js
     bookmarks: true,
     chapterReturn: true,
-    title: "Indigenous Women's Fellowship ",
+    title: "Guyana Storymap",
     logo: '',
-    subtitle: 'Our Future Forests-Amazonia Verde',
+    subtitle: 'Stories of Guyana',
     byline: 'Conservation International',
     mobileview: '<div id="rotate-mobile"><em>For optimal viewing of this storytelling map on mobile, rotate your device to a horizontal orientation.</em><br><br><img src="images/device.png">', // to add custom messaging in the header for mobile devices
     footer: 'Source: source citations, etc.<br> Created using <a href="https://github.com/mapbox/storytelling" target="_blank">Mapbox Storytelling</a> template.',
@@ -30,10 +30,10 @@ var config = {
             //website: '<a href="https://www.native-land.ca" target="_blank">Native Land website</a>',
            // author: 'Rudo Kemper, Digital Democracy',
             //legend: '<span style="font-size: 0.85em;"><em>Indigenous community names on the map courtesy of Native Land Digital</em></span>',
-            description: 'The Amazon rainforest is one of the main carbon sinks in the world, it is also home to the richest biodiversity of all the ecosystems on the planet, however, it is in crisis. Man-made fires are bringing the Amazon to a crisis point that will ahve irreversible consequences for people, wildlife and the planet. ',
+            description: "filler text: if we don't kind of take a step back and understand what else is going on in the landscape, so sometimes even kind of show the boundaries, allow them to get a sense of place, and then remove them and start to talk about why the landscape really is or what the other interesting part about this particular view is that this deforestation is happening in Brazil",
             location: {
-                center: [-60.72327,  -7.61420],
-                zoom: 3.37,
+                center: [-58.82264, 4.09495],
+                zoom: 5.66,
                 pitch: 0,
                 bearing: 0
             },
@@ -57,18 +57,18 @@ var config = {
             ]
         },
         {
-            id: 'Mission',
-            alignment: 'center',
+            id: 'deforestation-choice',
+            alignment: 'right',
             hidden: false,
-           // title: 'Montage',
+            title: 'Deforestation is a choice.',
            // image: 'images/long-banner.png',
            // caption: 'Photo Credits: "Kanuku Mountains"/"Mangroves"/"Giant Amazon Water Lily"/"Forest and Savannah Grassland" - ©Pete Oxford/iLCP; "Konashen Women" - ©Piotr Naskrecki; "Giant Otter" - ©Conservation International/photo by John Martin; "Scarlet Macaw" © Conservation International/photo by Haroldo Castro',
-           description: 'Our Future Forests-Amazonia Verde is working with Indigenous Peoples and Local Communities to advance investments and incentives that will conserve up to 12 percent of the Amazon - about 73 million hectares (180 million acres) - by 2025.',
+           description: "in Brazil, you can kind of see this herringbone pattern that kind of really stands out as a choice for us over here, but it's kind of dark green. And for Guyana, is this the path we want to choose?",
            location: {
-                center: [-60.72327,  -7.61420],
-                zoom: 3.37,
+                center: [-59.34351, 1.45006],
+                zoom: 6.49,
                 pitch: 0,
-                bearing: 0
+                bearing: -50
             },
             mapAnimation: 'flyTo',
             rotateAnimation: false,
@@ -78,18 +78,18 @@ var config = {
             onChapterExit: []
         },
         {
-            id: 'photo montage',
-            alignment: 'center',
+            id: 'bartica',
+            alignment: 'right',
             hidden: false,
-            //title: 'Montage',
-            image: 'images/long-banner.png',
-            caption: 'Photo Credits: "Kanuku Mountains"/"Mangroves"/"Giant Amazon Water Lily"/"Forest and Savannah Grassland" - ©Pete Oxford/iLCP; "Konashen Women" - ©Piotr Naskrecki; "Giant Otter" - ©Conservation International/photo by John Martin; "Scarlet Macaw" © Conservation International/photo by Haroldo Castro',
-            //description: 'Our Future Forests-Amazonia Verde is working with Indigenous Peoples and Local Communities to advance investments and incentives that will conserve up to 12 percent of the Amazon - about 73 million hectares (180 million acres) - by 2025.',
+            title: 'Bartica',
+            //image: 'images/long-banner.png',
+            //caption: 'Photo Credits: "Kanuku Mountains"/"Mangroves"/"Giant Amazon Water Lily"/"Forest and Savannah Grassland" - ©Pete Oxford/iLCP; "Konashen Women" - ©Piotr Naskrecki; "Giant Otter" - ©Conservation International/photo by John Martin; "Scarlet Macaw" © Conservation International/photo by Haroldo Castro',
+            description: "Most people in Ghana don't really know about the story of this river, but they know about a small town here called Bartica. This is where that river finally hits. It's all the tributaries come in from the Guyana side of the story.",
             location: {
-                center: [-60.72327,  -7.61420],
-                zoom: 3.37,
-                pitch: 0,
-                bearing: 0
+                center: [-58.65802, 6.37643],
+                zoom: 12.06,
+                pitch: 41.50,
+                bearing: -96.76
             },
             mapAnimation: 'flyTo',
             rotateAnimation: false,
@@ -99,18 +99,18 @@ var config = {
             onChapterExit: []
         },
         {
-            id: 'immaculata-casimero',
+            id: 'pollution',
             alignment: 'left',
             hidden: false,
-            title: 'Immaculata Casimero',
+            title: 'Mining',
             //image: 'images/immaculata-casimero.png',
             //caption: 'Photo Credits: "Kanuku Mountains"/"Mangroves"/"Giant Amazon Water Lily"/"Forest and Savannah Grassland" - ©Pete Oxford/iLCP; "Konashen Women" - ©Piotr Naskrecki; "Giant Otter" - ©Conservation International/photo by John Martin; "Scarlet Macaw" © Conservation International/photo by Haroldo Castro',
-            description: '<p style="font-size:18px;">"Working with my people over the years has made me aware of the concerns, issues, and struggles of my people, especially as it relates to mining activities that are being carried on our traditional lands which is causing devastating impacts on the environment and contributing to climate change, social and health issues." </p> <img src="images/immaculata-casimero.png"><p> "I am Immaculata Casimero, 38 years of age, an indigenous woman, who belongs to the Wapichan nation in Aishalton (Aishara Toon) village Guyana. Presently, I am employed as the communications officer with the South Rupununi District Council (SRDC), a local Indigenous Organisation that represents 21 communities within the Wapichan territory. Besides my job; I hold the positions as chairperson of the Aishara Toon Women&apos;s Association (AWA), a community based organization which is comprised of 15 women in the Wapichan village of Aishalton; and the Aishalton Primary School feeding programme which provides hot meals on a daily basis to over 177 students.</p> </p>My journey as a village leader began in 2015 when I was elected as a village councillor where I served in the capacity as Secretary of the Aishalton Village Council for 3 years.</p> <p> In January of 2020, I helped to organize the first Rupununi Indigenous Women’s Conference which brought together over eighty women to discuss and focus on gender, leadership, environmental issues, and empowerment. I am also a co-founder of Wapichan Women’s Movement (WWM) which is the women’s arm of the South Rupununi District Council. The Wapichan Women’s Movement aims toward improving women&apos;s livelihood through collective action, entrepreneurship and empowerment."</p>',
+            description: "But as you can see, the color change happened a long time before it hit. So like, you have this right on the border, this again on the border. But both kind of signal in a warning as this is in your future if you don't get it right. Conversely, you have the opportunity to apply this by making different choices. So like the deforestation agriculture story in Brazil, and the large scale kind of irresponsible mining in the Venezuelan part of this story.",
             location: {
-                center: [-59.63122,  2.46687],
-                zoom: 8.86,
-                pitch: 0,
-                bearing: 0
+                center: [-61.77681, 6.42177],
+                zoom: 13.71,
+                pitch: 39.53,
+                bearing: 26.29
             },
             mapAnimation: 'flyTo',
             rotateAnimation: false,
