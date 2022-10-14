@@ -120,16 +120,16 @@ var config = {
             onChapterExit: []
         },
         {
-            id: 'immaculata-iwf',
+            id: 'brazil',
             alignment: 'left',
             hidden: false,
-            //title: 'IWF Project',
+            title: 'Savanah and fragmented forest',
             //image: 'images/immaculata-casimero.png',
             //caption: 'Photo Credits: "Kanuku Mountains"/"Mangroves"/"Giant Amazon Water Lily"/"Forest and Savannah Grassland" - ©Pete Oxford/iLCP; "Konashen Women" - ©Piotr Naskrecki; "Giant Otter" - ©Conservation International/photo by John Martin; "Scarlet Macaw" © Conservation International/photo by Haroldo Castro',
-            description: "IWF Project: Through this programme I would like to continue advocating for protection of the main headwaters of the South Rupununi, because of the ecosystems, habitats, important sites and culturally sensitive areas are located within the area. I plan to hold workshops and raise awareness on environmental laws, so that indigenous women can increase their knowledge about the importance of the environment and protecting the headwaters of South Rupununi. ",
+            description: "In Brazil, they moving from the savanna and kind of breaking, fragmenting forests, creating these open spaces. So the forest gaps in between are shrinking, because every year there's a fire. It just eats away at the edges, and eventually, the green disappears and the system flips.",
             location: {
-                center: [-59.33160,  2.47234],
-                zoom: 14.44,
+                center: [-61.24512,  2.78822],
+                zoom: 11.08,
                 pitch: 0,
                 bearing: 0
             },
@@ -141,16 +141,16 @@ var config = {
             onChapterExit: []
         },
         {
-            id: 'caroline-jacobs',
+            id: 'brazil-2',
             alignment: 'left',
             hidden: false,
-            title: 'Caroline Jacbos',
+            //title: 'Savanah and fragmented forest',
             //image: 'images/immaculata-casimero.png',
             //caption: 'Photo Credits: "Kanuku Mountains"/"Mangroves"/"Giant Amazon Water Lily"/"Forest and Savannah Grassland" - ©Pete Oxford/iLCP; "Konashen Women" - ©Piotr Naskrecki; "Giant Otter" - ©Conservation International/photo by John Martin; "Scarlet Macaw" © Conservation International/photo by Haroldo Castro',
-            description: '<p style="font-size:18px;">"My life long goal is to uphold and maintain the traditional knowledge and culture of my people that has contributed to the conservation and preservation of our intact ecosystems for the wellbeing of our people." </p> <img src="images/caroline-jacobs.png"><p> My Name is Caroline Jacobs, a Makushi woman born in Surama Village, North Rupununi, Region # 9, Guyana.</p> <p>Growing up in the remote village of Surama I have witnessed and experienced the struggles of my fellow indigenous women in making their voices heard during the decision making process of our community development. Being cognizance of the fact that our women folks have a massive amount of knowledge regarding the social and environmental wellbeing of our community I stand strong to represent and help them. My aspiration is to become an Indigenous Woman Advocate who can act as a representative for the unheard voices of the community."</p>',
+            description: "It's looking much less like a forested landscape than, say, a savanna landscape.",
             location: {
-                center: [-59.21541,  3.99821],
-                zoom: 10.11,
+                center: [-60.99273,  2.73031],
+                zoom: 10.10,
                 pitch: 0,
                 bearing: 0
             },
@@ -162,16 +162,79 @@ var config = {
             onChapterExit: []
         },
         {
-            id: 'caroline-iwf',
-            alignment: 'left',
+            id: 'rice',
+            alignment: 'right',
+            hidden: false,
+            title: 'Rice',
+            //image: 'images/immaculata-casimero.png',
+            //caption: 'Photo Credits: "Kanuku Mountains"/"Mangroves"/"Giant Amazon Water Lily"/"Forest and Savannah Grassland" - ©Pete Oxford/iLCP; "Konashen Women" - ©Piotr Naskrecki; "Giant Otter" - ©Conservation International/photo by John Martin; "Scarlet Macaw" © Conservation International/photo by Haroldo Castro',
+            description: "So, this let me show you the Brazil side. So you see this is This is rice happening on the Brazilian side, and this is the Guyana side. So this is this is what natural savannas look like tropical savannas. And this is Brazil trying to cultivate them with with like fertilizers and stuff. Now they're able to do it only on these areas, these low areas closer to the river is on a kind of a slope downwards from this space.",
+            location: {
+                center: [-59.53744,  3.600449],
+                zoom: 10.09,
+                pitch: 0,
+                bearing: 0
+            },
+            mapAnimation: 'flyTo',
+            rotateAnimation: false,
+            mapInteractive: false,
+            callback: '',
+            onChapterEnter: [],
+            onChapterExit: []
+        },
+        {
+            id: 'rice-2',
+            alignment: 'right',
+            hidden: false,
+            //title: 'Rice 2',
+            //image: 'images/immaculata-casimero.png',
+            //caption: 'Photo Credits: "Kanuku Mountains"/"Mangroves"/"Giant Amazon Water Lily"/"Forest and Savannah Grassland" - ©Pete Oxford/iLCP; "Konashen Women" - ©Piotr Naskrecki; "Giant Otter" - ©Conservation International/photo by John Martin; "Scarlet Macaw" © Conservation International/photo by Haroldo Castro',
+            description: "In Guyana, we always looked at Brazil and so that they could grow rice in there and Sivanna that we should do. But there's one problem, like it doesn't make sense unless it's heavily subsidized by the agricultural industry.",
+            location: {
+                center: [-59.68925, 3.70693],
+                zoom: 13.39,
+                pitch: 0,
+                bearing: 0
+            },
+            mapAnimation: 'flyTo',
+            rotateAnimation: false,
+            mapInteractive: false,
+            callback: '',
+            onChapterEnter: [],
+            onChapterExit: []
+        },
+        {
+            id: 'rice-3',
+            alignment: 'right',
+            hidden: false,
+            //title: 'Rice 2',
+            //image: 'images/immaculata-casimero.png',
+            //caption: 'Photo Credits: "Kanuku Mountains"/"Mangroves"/"Giant Amazon Water Lily"/"Forest and Savannah Grassland" - ©Pete Oxford/iLCP; "Konashen Women" - ©Piotr Naskrecki; "Giant Otter" - ©Conservation International/photo by John Martin; "Scarlet Macaw" © Conservation International/photo by Haroldo Castro',
+            description: "On Ghana side of things, ut is natural tropical savanah. Here we see the watersheds come quite close to each other, and flow in different directions. That is occurrs all over this landscape. So water flows in one part to Brazil to the left, and right to Ghana.",
+            location: {
+                center: [-59.42566, 3.71049],
+                zoom: 11.09,
+                pitch: 0,
+                bearing: 0
+            },
+            mapAnimation: 'flyTo',
+            rotateAnimation: false,
+            mapInteractive: false,
+            callback: '',
+            onChapterEnter: [],
+            onChapterExit: []
+        },
+        {
+            id: 'rice 4',
+            alignment: 'right',
             hidden: false,
             //title: 'Caroline Jacbos',
             //image: 'images/immaculata-casimero.png',
             //caption: 'Photo Credits: "Kanuku Mountains"/"Mangroves"/"Giant Amazon Water Lily"/"Forest and Savannah Grassland" - ©Pete Oxford/iLCP; "Konashen Women" - ©Piotr Naskrecki; "Giant Otter" - ©Conservation International/photo by John Martin; "Scarlet Macaw" © Conservation International/photo by Haroldo Castro',
-            description: 'IWF project: This project aims to document and record the traditional leadership knowledge of our council of elders within four geographic communities focusing on the women. The main idea is to document traditional knowledge on how the core values of people were applied and implemented years ago and how this influenced them to maintain a healthy environment up to today. The Surama Women’s Organic Garden will be used to cultivate and share the knowledge of medicinal herbs. The vital lessons  learnt from the elders will be shared with the youths and with other groups for replication where necessary. ',
+            description: "So trying to grow rice, the way Brazil is doing it in this space is kind of a biological bomb. So we look across we see Brazil is doing it, but we fail to recognize this floods is slow. And if we put any fertilizer, it's just going to liquefy onto the landscape and cause more problems.",
             location: {
-                center: [-59.07930,  4.12659],
-                zoom: 14.44,
+                center: [-59.51788,  3.68975],
+                zoom: 10.76,
                 pitch: 0,
                 bearing: 0
             },
