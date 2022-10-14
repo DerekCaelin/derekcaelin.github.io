@@ -30,7 +30,7 @@ var config = {
             //website: '<a href="https://www.native-land.ca" target="_blank">Native Land website</a>',
            // author: 'Rudo Kemper, Digital Democracy',
             //legend: '<span style="font-size: 0.85em;"><em>Indigenous community names on the map courtesy of Native Land Digital</em></span>',
-            description: "filler text: if we don't kind of take a step back and understand what else is going on in the landscape, so sometimes even kind of show the boundaries, allow them to get a sense of place, and then remove them and start to talk about why the landscape really is or what the other interesting part about this particular view is that this deforestation is happening in Brazil",
+            description: "filler text: if we don't kind of take a step back and understand what else is going on in the landscape, so sometimes even kind of show the boundaries, allow them to get a sense of place, and then remove them and start to talk about what the landscape really is.",
             location: {
                 center: [-58.82264, 4.09495],
                 zoom: 5.66,
@@ -63,7 +63,7 @@ var config = {
             title: 'Deforestation is a choice.',
            // image: 'images/long-banner.png',
            // caption: 'Photo Credits: "Kanuku Mountains"/"Mangroves"/"Giant Amazon Water Lily"/"Forest and Savannah Grassland" - ©Pete Oxford/iLCP; "Konashen Women" - ©Piotr Naskrecki; "Giant Otter" - ©Conservation International/photo by John Martin; "Scarlet Macaw" © Conservation International/photo by Haroldo Castro',
-           description: "in Brazil, you can kind of see this herringbone pattern that kind of really stands out as a choice for us over here, but it's kind of dark green. And for Guyana, is this the path we want to choose?",
+           description: "We look at Brzail to see a choice for Guyana. In Brazil, you can kind of see this herringbone pattern of deforestation. For us over here, but it's dark green forest. Which is the path we want to choose?",
            location: {
                 center: [-59.34351, 1.45006],
                 zoom: 6.49,
