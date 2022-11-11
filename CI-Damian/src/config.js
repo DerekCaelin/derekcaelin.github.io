@@ -148,7 +148,7 @@ var config = {
                 speed: 0.5,
                 bearing: 0
             },
-            mapAnimation: 'easeTo',
+            mapAnimation: 'flyTo',
             rotateAnimation: false,
             spinGlobe: false,
             mapInteractive: true,
@@ -185,7 +185,7 @@ var config = {
                 speed: 0.5,
                 bearing: 0
             },
-            mapAnimation: 'easeTo',
+            mapAnimation: 'flyTo',
             rotateAnimation: false,
             spinGlobe: false,
             mapInteractive: true,
