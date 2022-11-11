@@ -71,6 +71,7 @@ var config = {
                 center: [-59.55538, 6.33443],
                 zoom: 6.48,
                 pitch: 0,
+                speed: 0.2,
                 bearing: 0
             },
             mapAnimation: 'flyTo',
@@ -107,6 +108,7 @@ var config = {
                 center: [-59.91014, 6.91520],
                 zoom: 7.43,
                 pitch: 64.00,
+                speed: 0.2,
                 bearing:  -99.20
             },
             mapAnimation: 'flyTo',
@@ -143,6 +145,7 @@ var config = {
                 center: [-57.99961, 6.78160],
                 zoom: 16.13,
                 pitch: 0,
+                speed: 0.2,
                 bearing: 0
             },
             mapAnimation: 'easeTo',
@@ -179,6 +182,7 @@ var config = {
                 center: [-55.82815, 2.63535],
                 zoom: 6,
                 pitch: 0,
+                speed: 0.2,
                 bearing: 0
             },
             mapAnimation: 'easeTo',
@@ -216,6 +220,7 @@ var config = {
                 center: [-60.11765, 8.60239],
                 zoom: 16.11,
                 pitch: 0,
+                speed: 0.2,
                 bearing: -168.60
             },
             mapAnimation: 'flyTo',
@@ -252,6 +257,7 @@ var config = {
                 center: [-58.51004, 7.35951],
                 zoom: 14.15,
                 pitch: 0,
+                speed: 0.2,
                 bearing: -168.60
             },
             mapAnimation: 'flyTo',
@@ -288,6 +294,7 @@ var config = {
                 center: [-58.21107, 6.82913],
                 zoom: 15.97,
                 pitch: 0,
+                speed: 0.2,
                 bearing: 0
             },
             mapAnimation: 'flyTo',
@@ -324,6 +331,7 @@ var config = {
                 center: [-58.21107, 6.82913],
                 zoom: 15.97,
                 pitch: 0,
+                speed: 0.2,
                 bearing: 0
             },
             mapAnimation: 'flyTo',
@@ -360,6 +368,7 @@ var config = {
                 center: [-58.14961, 6.80326],
                 zoom: 11.98,
                 pitch: 0,
+                speed: 0.2,
                 bearing: 0
             },
             mapAnimation: 'flyTo',
@@ -396,6 +405,7 @@ var config = {
                 center: [-57.86458, 6.65785],
                 zoom: 15.05,
                 pitch: 0,
+                speed: 0.2,
                 bearing: 0
             },
             mapAnimation: 'flyTo',
