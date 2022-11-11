@@ -21,6 +21,150 @@ var config = {
     footer: 'Source: source citations, etc.<br> Created using <a href="https://github.com/mapbox/storytelling" target="_blank">Mapbox Storytelling</a> template.',
     chapters: [
         {
+            id: 'guyana-overview',
+            alignment: 'left',
+            hidden: false,
+            title: 'Introduction',
+            //image: 'images/overview-map.png',
+            //caption: 'Source image caption',
+            //website: '<a href="https://www.native-land.ca" target="_blank">Native Land website</a>',
+           // author: 'Rudo Kemper, Digital Democracy',
+            //legend: '<span style="font-size: 0.85em;"><em>Indigenous community names on the map courtesy of Native Land Digital</em></span>',
+            description: "Guyana lies in a strange area just north of the Amazon river. Most of our rivers aren't connected to the Amazon; instead, they flow north into the Atlantic. We're the only English speaking country in South America. To the east of us is what was formerly Dutch Guyana, Suriname, and then the east of Suriname is French, Ghana and then Venezuela to the west and Brazil to the south. So all of the there about four languages four distinct cultures be in this small space.",
+            location: {
+                center: [-57.75175, 4.25187],
+                zoom: 5.38,
+                pitch: 0,
+                bearing: 0
+            },
+            mapAnimation: 'flyTo',
+            rotateAnimation: false,
+            spinGlobe: false,
+            mapInteractive: true,
+            callback: '',
+            onChapterEnter: [
+                // {
+                //     layer: 'layer-name',
+                //     opacity: 1,
+                //     duration: 5000
+                // }
+            ],
+            onChapterExit: [
+                // {
+                //     layer: 'layer-name',
+                //     opacity: 0
+                // }
+            ]
+        },
+        {
+            id: 'highlands1',
+            alignment: 'left',
+            hidden: false,
+            title: 'The Highlands',
+            //image: 'images/overview-map.png',
+            //caption: 'Source image caption',
+            //website: '<a href="https://www.native-land.ca" target="_blank">Native Land website</a>',
+           // author: 'Rudo Kemper, Digital Democracy',
+            //legend: '<span style="font-size: 0.85em;"><em>Indigenous community names on the map courtesy of Native Land Digital</em></span>',
+            description: "This ancient formation is the Guyana shield and the Guyana Highlands. This, according to traditional understanding of this formation, is the stump of the World Tree that man cut down. This is what's left of the world tree and the tree of life. In some cultures, and out of this stump.",
+            location: {
+                center: [-59.55538, 6.33443],
+                zoom: 6.48,
+                pitch: 0,
+                bearing: 0
+            },
+            mapAnimation: 'flyTo',
+            rotateAnimation: false,
+            spinGlobe: false,
+            mapInteractive: true,
+            callback: '',
+            onChapterEnter: [
+                // {
+                //     layer: 'layer-name',
+                //     opacity: 1,
+                //     duration: 5000
+                // }
+            ],
+            onChapterExit: [
+                // {
+                //     layer: 'layer-name',
+                //     opacity: 0
+                // }
+            ]
+        },
+        {
+            id: 'highlands2',
+            alignment: 'full',
+            hidden: false,
+            title: 'The Highlands',
+            image: 'images/guyana_highlands.png',
+            //caption: 'Source image caption',
+            //website: '<a href="https://www.native-land.ca" target="_blank">Native Land website</a>',
+           // author: 'Rudo Kemper, Digital Democracy',
+            //legend: '<span style="font-size: 0.85em;"><em>Indigenous community names on the map courtesy of Native Land Digital</em></span>',
+            description: "These are the 2-billion-year-old highlands are still growing, forming some of the most dramatic terrain in all of Guyana. There's a lot of stories to tell on this landscape that kind of connect much bigger geological and kind of moments in time.",
+            location: {
+                center: [-59.91014, 6.91520],
+                zoom: 7.43,
+                pitch: 64.00,
+                bearing:  -99.20
+            },
+            mapAnimation: 'flyTo',
+            rotateAnimation: false,
+            spinGlobe: false,
+            mapInteractive: true,
+            callback: '',
+            onChapterEnter: [
+                // {
+                //     layer: 'layer-name',
+                //     opacity: 1,
+                //     duration: 5000
+                // }
+            ],
+            onChapterExit: [
+                // {
+                //     layer: 'layer-name',
+                //     opacity: 0
+                // }
+            ]
+        },
+        {
+            id: 'concrete',
+            alignment: 'left',
+            hidden: false,
+            title: 'Concrete',
+            image: 'images/concrete.gif',
+            //caption: 'Source image caption',
+            //website: '<a href="https://www.native-land.ca" target="_blank">Native Land website</a>',
+           // author: 'Rudo Kemper, Digital Democracy',
+            //legend: '<span style="font-size: 0.85em;"><em>Indigenous community names on the map courtesy of Native Land Digital</em></span>',
+            description: "Hard coastal structures such as concrete seawalls cause wave energy to be reflected, creating more turbulence and much higher wave heights along these human-engineered shores, and ultimately making it difficult for mudflats to form and remain.",
+            location: {
+                center: [-58.21107, 6.82913],
+                zoom: 15.97,
+                pitch: 0,
+                bearing: 0
+            },
+            mapAnimation: 'flyTo',
+            rotateAnimation: false,
+            spinGlobe: false,
+            mapInteractive: true,
+            callback: '',
+            onChapterEnter: [
+                // {
+                //     layer: 'layer-name',
+                //     opacity: 1,
+                //     duration: 5000
+                // }
+            ],
+            onChapterExit: [
+                // {
+                //     layer: 'layer-name',
+                //     opacity: 0
+                // }
+            ]
+        },
+        {
             id: 'mangrove-coast',
             alignment: 'right',
             hidden: false,
