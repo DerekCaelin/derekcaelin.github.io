@@ -30,7 +30,7 @@ var config = {
             //website: '<a href="https://www.native-land.ca" target="_blank">Native Land website</a>',
            // author: 'Rudo Kemper, Digital Democracy',
             //legend: '<span style="font-size: 0.85em;"><em>Indigenous community names on the map courtesy of Native Land Digital</em></span>',
-            description: "Guyana lies in a strange area just north of the Amazon river. Most of our rivers aren't connected to the Amazon; instead, they flow north into the Atlantic. We're the only English speaking country in South America. To the east of us is what was formerly Dutch Guyana, Suriname, and then the east of Suriname is French, Ghana and then Venezuela to the west and Brazil to the south. So all of the there about four languages four distinct cultures be in this small space.",
+            description: "Guyana lies in a strange area just north of the Amazon river. Most of our rivers aren't connected to the Amazon; instead, they flow north into the Atlantic. We're the only English speaking country in South America. To the east of us is what was formerly Dutch Guyana, Suriname, and then the east of Suriname is French Guyana.  Venezuela is to the west and Brazil to the south. So all of the there about four languages four distinct cultures be in this small space.",
             location: {
                 center: [-58, 4.25187],
                 zoom: 6,
@@ -71,7 +71,7 @@ var config = {
                 center: [-59.55538, 6.33443],
                 zoom: 6.48,
                 pitch: 0,
-                speed: 0.2,
+                speed: 0.5,
                 bearing: 0
             },
             mapAnimation: 'flyTo',
@@ -108,7 +108,7 @@ var config = {
                 center: [-59.91014, 6.91520],
                 zoom: 7.43,
                 pitch: 64.00,
-                speed: 0.2,
+                speed: 0.5,
                 bearing:  -99.20
             },
             mapAnimation: 'flyTo',
@@ -145,7 +145,7 @@ var config = {
                 center: [-57.99961, 6.78160],
                 zoom: 16.13,
                 pitch: 0,
-                speed: 0.2,
+                speed: 0.5,
                 bearing: 0
             },
             mapAnimation: 'easeTo',
@@ -182,7 +182,7 @@ var config = {
                 center: [-55.82815, 2.63535],
                 zoom: 6,
                 pitch: 0,
-                speed: 0.2,
+                speed: 0.5,
                 bearing: 0
             },
             mapAnimation: 'easeTo',
@@ -257,7 +257,7 @@ var config = {
                 center: [-58.51004, 7.35951],
                 zoom: 14.15,
                 pitch: 0,
-                speed: 0.2,
+                speed: 0.5,
                 bearing: -168.60
             },
             mapAnimation: 'flyTo',
@@ -294,7 +294,7 @@ var config = {
                 center: [-58.21107, 6.82913],
                 zoom: 15.97,
                 pitch: 0,
-                speed: 0.2,
+                speed: 0.5,
                 bearing: 0
             },
             mapAnimation: 'flyTo',
@@ -331,7 +331,7 @@ var config = {
                 center: [-58.21107, 6.82913],
                 zoom: 15.97,
                 pitch: 0,
-                speed: 0.2,
+                speed: 0.5,
                 bearing: 0
             },
             mapAnimation: 'flyTo',
@@ -368,7 +368,7 @@ var config = {
                 center: [-58.14961, 6.80326],
                 zoom: 11.98,
                 pitch: 0,
-                speed: 0.2,
+                speed: 0.5,
                 bearing: 0
             },
             mapAnimation: 'flyTo',
@@ -405,7 +405,7 @@ var config = {
                 center: [-57.86458, 6.65785],
                 zoom: 15.05,
                 pitch: 0,
-                speed: 0.2,
+                speed: 0.5,
                 bearing: 0
             },
             mapAnimation: 'flyTo',
