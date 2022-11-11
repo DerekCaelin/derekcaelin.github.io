@@ -103,7 +103,7 @@ var config = {
             //website: '<a href="https://www.native-land.ca" target="_blank">Native Land website</a>',
            // author: 'Rudo Kemper, Digital Democracy',
             //legend: '<span style="font-size: 0.85em;"><em>Indigenous community names on the map courtesy of Native Land Digital</em></span>',
-            description: "These are the 2-billion-year-old highlands are still growing, forming some of the most dramatic terrain in all of Guyana. There's a lot of stories to tell on this landscape that kind of connect much bigger geological and kind of moments in time.",
+            description: "These are the 2-billion-year-old highlands are still growing, forming some of the most dramatic terrain in all of Guyana. There's a lot of stories to tell on this landscape that connect much bigger geological moments in time.",
             location: {
                 center: [-59.91014, 6.91520],
                 zoom: 7.43,
