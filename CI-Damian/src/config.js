@@ -30,7 +30,7 @@ var config = {
             //website: '<a href="https://www.native-land.ca" target="_blank">Native Land website</a>',
            // author: 'Rudo Kemper, Digital Democracy',
             //legend: '<span style="font-size: 0.85em;"><em>Indigenous community names on the map courtesy of Native Land Digital</em></span>',
-            description: "Guyana lies in a strange area just north of the Amazon river. Most of our rivers aren't connected to the Amazon; instead, they flow north into the Atlantic. We're the only English speaking country in South America. To the east of us is what was formerly Dutch Guyana, Suriname, and then the east of Suriname is French Guyana.  Venezuela is to the west and Brazil to the south. So all of the there about four languages four distinct cultures be in this small space.",
+            description: "In an ancient, and often forgotten, corner of South America lies Guyana, the 'land of many waters'. Boasting some of the oldest and youngest landscapes on the planet, nature is at the center of who we are as Guyanese. With the country's economy now emmerging as one of the fastest growing in the world, Guyana is charting a new path towards to sustainable and climate resilient development. The coutry is extraordinarily well-positioned to demonstrate nature-based solutions in humanity’s race towards coastal climate adaptation. With over 250 million tons of Amazonian sediment passing off its Atlantic coast, we are designing blended “green” (mangroves) and “gray” (sea walls) solutions to protect, and grow, its coast. To understand how this approach would work in Guyana, we should take a broader look at the regional landscape. ",
             location: {
                 center: [-58, 4.25187],
                 zoom: 6,
@@ -66,7 +66,7 @@ var config = {
             //website: '<a href="https://www.native-land.ca" target="_blank">Native Land website</a>',
            // author: 'Rudo Kemper, Digital Democracy',
             //legend: '<span style="font-size: 0.85em;"><em>Indigenous community names on the map courtesy of Native Land Digital</em></span>',
-            description: "This ancient formation is the Guyana shield and the Guyana Highlands. This, according to traditional understanding of this formation, is the stump of the World Tree that man cut down. This is what's left of the world tree and the tree of life. In some cultures, and out of this stump.",
+            description: "Guyana sits on the 2 billion year old Guiana Sheild, the oldest mountain range in the western hemispehere. Known for its strange table top mountains, that sit above the clouds like islands in the sky, this landscape is home to isolated and unique species found nowehere else on the planet. The age and mystery of the landscape has inpired countless myths, books and movies like 'The Lost World' by Arthur Conan Doyle and Diney's 'Up'. To some of Guyana's inidgenous people, thes mountains are spiritual places, steeped in stories of creation, life and water.",
             location: {
                 center: [-59.55538, 6.33443],
                 zoom: 6.48,
@@ -103,7 +103,7 @@ var config = {
             //website: '<a href="https://www.native-land.ca" target="_blank">Native Land website</a>',
            // author: 'Rudo Kemper, Digital Democracy',
             //legend: '<span style="font-size: 0.85em;"><em>Indigenous community names on the map courtesy of Native Land Digital</em></span>',
-            description: "These are the 2-billion-year-old highlands are still growing, forming some of the most dramatic terrain in all of Guyana. There's a lot of stories to tell on this landscape that connect much bigger geological moments in time.",
+            description: "These are the 2-billion-year-old highlands are still growing, forming some of the most dramatic terrThese rivers connect Guyana's ancient mountains to its coast; one of the planet's youngest landscapes still emerging from the Atlantic. These rivers transport sediment to our coast, where it is swept up into a natural land-forming phenomenon that we are ony now beginning to understand. The Amazon delivers over 1.1 billion tons of suspended sediment and 270 million tons of dissolved organic matter into the Atlantic Ocean every year. This enormous plume of mud, which can be seen from space, kickstarts a giant 'earth-engine' that has powered the creation of Guyana’s coast for millions of years.ain in all of Guyana. There's a lot of stories to tell on this landscape that connect much bigger geological moments in time.",
             location: {
                 center: [-59.91014, 6.91520],
                 zoom: 7.43,
