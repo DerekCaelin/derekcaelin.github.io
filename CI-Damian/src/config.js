@@ -8,10 +8,10 @@ var config = {
     //https://docs.mapbox.com/mapbox-gl-js/example/projections/  
     inset: true,
     legend: true, // if legend is set to true, inset will be disabled.
-    theme: 'dark',
+    theme: 'light',
     use3dTerrain: true, //set true for enabling 3D maps.
     useCustomLayers: false, //set true for enabling custom layers from sources.js
-    bookmarks: true,
+    bookmarks: false,
     chapterReturn: false,
     title: "The Mud that Makes Us",
     logo: '',
@@ -518,7 +518,7 @@ var config = {
             //website: '',
            // author: '',
             //legend: '',
-            description: "<image src='images/wave-dampen.png' alt='mangrove trees dramatically reduce the amplitude of waves.' width='100%'><br>By removing the mangroves and replacing them with concrete structures, the colonial powers set in motion the story of coastal erosion we see playing out today.hese same locations are where mangroves are missing today, and erosion troubles the coast.<br><br><image src='images/wave-reflection.png' alt='concrete barriers increase the strength of waves and eroding forces.' width='100%'> ",
+            description: "<image src='images/wave-dampen.png' alt='mangrove trees dramatically reduce the amplitude of waves.' width='100%'><br>By removing the mangroves and replacing them with concrete structures, the colonial powers set in motion the story of coastal erosion we see playing out today.<br><br><image src='images/wave-reflection.png' alt='concrete barriers increase the strength of waves and eroding forces.' width='100%'> ",
             location: {
                 center: [-58.21107, 6.82913],
                 zoom: 17.97,
@@ -620,6 +620,45 @@ var config = {
                 // }
             ]
         },
+
+        {
+            id: 'danzig-4',
+            alignment: 'center',
+            hidden: false,
+            //title: 'Danzig Collapse',
+            //image: '',
+            //caption: 'S',
+            //website: '',
+           // author: '',
+            //legend: '',
+            description: "Deep erosion in one spot along the former seawall forced the new sea defence to be built slightly inland, accidently setting the stage for a demonstration of the power of this hidden earth engine.<br><br>The results are familiar.<br></center><iframe width='100%'  height='300' src='https://www.youtube.com/embed/ojVULdJRiAs' title='YouTube video player' frameborder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture' allowfullscreen></iframe>",
+            location: {
+                center: [-57.83390, 6.63358],
+                zoom: 14.41,
+                pitch: 67.50,
+                bearing: -62.40,
+                duration: 5000
+            },
+            mapAnimation: 'flyTo',
+            rotateAnimation: false,
+            spinGlobe: false,
+            mapInteractive: true,
+            callback: '',
+            onChapterEnter: [
+                // {
+                //     layer: 'layer-name',
+                //     opacity: 1,
+                //     duration: 5000
+                // }
+            ],
+            onChapterExit: [
+                // {
+                //     layer: 'layer-name',
+                //     opacity: 0
+                // }
+            ]
+        },
+
         {
             id: 'danzig-2',
             alignment: 'center',
@@ -632,11 +671,11 @@ var config = {
             //legend: '',
             description: "The result was millions of dollars worth in damage and loss to livelihoods. <br><br></center><iframe width='100%' height='300' src='https://www.youtube.com/embed/FWlSXmXRVzg'  title='YouTube video player' frameborder='0' allow='accelerometer; autoplay = 'true'; clipboard-write; encrypted-media; gyroscope; picture-in-picture' allowfullscreen>",
             location: {
-                center: [-57.86458, 6.65785],
-                zoom: 15.05,
-                pitch: 0,
-                speed: 0.5,
-                bearing: 0
+                center: [-57.84776, 6.64562],
+                zoom: 14.41,
+                pitch: 67.50,
+                bearing: -62.40,
+                duration: 10000
             },
             mapAnimation: 'flyTo',
             rotateAnimation: false,
@@ -661,7 +700,7 @@ var config = {
             id: 'danzig-3',
             alignment: 'center',
             hidden: false,
-            title: 'Danzig Collapse',
+            //title: 'Danzig Collapse',
             //image: '',
             //caption: 'S',
             //website: '',
@@ -669,11 +708,11 @@ var config = {
             //legend: '',
             description: "After mutliple attempts and huge investments, the breach was sealed using traditional 'grey' engineeering, involving stone and concrete structures. <video controls loop autoplay muted width='100%'><source src='movies/danzig-wall.mp4' type='video/mp4' ></video>",
             location: {
-                center: [-57.86458, 6.65785],
-                zoom: 15.05,
-                pitch: 0,
-                speed: 0.5,
-                bearing: 0
+                center: [-57.86075, 6.65932],
+                zoom: 14.41,
+                pitch: 64.50,
+                bearing: 45.60,
+                duration: 10000
             },
             mapAnimation: 'flyTo',
             rotateAnimation: false,
@@ -695,49 +734,13 @@ var config = {
             ]
         },
         
-        {
-            id: 'danzig-4',
-            alignment: 'center',
-            hidden: false,
-            title: 'Danzig Collapse',
-            //image: '',
-            //caption: 'S',
-            //website: '',
-           // author: '',
-            //legend: '',
-            description: "Deep erosion in one sport along the former seawall forced the new sea defence to be built slightly inland, accidently setting the stage for a demonstration of the power of this hidden earth engine.<br>The results are familiar.<br></center><iframe width='100%' height='200' src='https://youtu.be/ojVULdJRiAs' title='YouTube video player' frameborder='0' allow='accelerometer; autoplay = 'true'; clipboard-write; encrypted-media; gyroscope; picture-in-picture' allowfullscreen>",
-            location: {
-                center: [-57.86458, 6.65785],
-                zoom: 15.05,
-                pitch: 0,
-                speed: 0.5,
-                bearing: 0
-            },
-            mapAnimation: 'flyTo',
-            rotateAnimation: false,
-            spinGlobe: false,
-            mapInteractive: true,
-            callback: '',
-            onChapterEnter: [
-                // {
-                //     layer: 'layer-name',
-                //     opacity: 1,
-                //     duration: 5000
-                // }
-            ],
-            onChapterExit: [
-                // {
-                //     layer: 'layer-name',
-                //     opacity: 0
-                // }
-            ]
-        },
+       
 
         {
             id: 'danzig-5',
             alignment: 'center',
             hidden: false,
-            title: 'Danzig Collapse',
+            //title: 'Danzig Collapse',
             //image: '',
             //caption: 'S',
             //website: '',
@@ -745,11 +748,11 @@ var config = {
             //legend: '',
             description: "The erosion at Danzig that led to the breach was, in fact, the herald of an approaching submerged mudbank, and an opportunity to not just defend the coast, but to pull new land from the sea.",
             location: {
-                center: [-57.86458, 6.65785],
-                zoom: 15.05,
-                pitch: 0,
-                speed: 0.5,
-                bearing: 0
+                center: [-57.86075, 6.65932],
+                zoom: 14.41,
+                pitch: 64.50,
+                bearing: 45.60,
+                duration: 10000
             },
             mapAnimation: 'flyTo',
             rotateAnimation: false,
@@ -775,19 +778,19 @@ var config = {
             id: 'danzig-6',
             alignment: 'center',
             hidden: false,
-            title: 'Danzig Collapse',
+            //title: 'Danzig Collapse',
             //image: '',
             //caption: 'S',
             //website: '',
            // author: '',
             //legend: '',
-            description: "We can restart the powerful earth engine that made our coast in the first place, putting nature to work as we build a resilient future. By combining traditional “grey” sea defences (concrete walls, sea dams, jetties, etc.) with “green” nature-based approaches (mud, mangroves, saltmarshes, etc.), Guyana can once again gain the advantage in its battle with the sea. We can go beyond simply defending our lands and families from the ocean and begin to expand land into the sea.<br><br></center><iframe width='100%' height='200' src='https://youtu.be/hkFRp_USd_Q' title='YouTube video player' frameborder='0' allow='accelerometer; autoplay = 'true'; clipboard-write; encrypted-media; gyroscope; picture-in-picture' allowfullscreen>",
+            description: "We can restart the powerful earth engine that made our coast in the first place, putting nature to work as we build a resilient future. By combining traditional “grey” sea defences (concrete walls, sea dams, jetties, etc.) with “green” nature-based approaches (mud, mangroves, saltmarshes, etc.), Guyana can once again gain the advantage in its battle with the sea. We can go beyond simply defending our lands and families from the ocean and begin to expand land into the sea.<br><br></center>",
             location: {
-                center: [-57.86458, 6.65785],
-                zoom: 15.05,
-                pitch: 0,
-                speed: 0.5,
-                bearing: 0
+                center: [-57.86075, 6.65932],
+                zoom: 14.41,
+                pitch: 64.50,
+                bearing: 45.60,
+                duration: 10000
             },
             mapAnimation: 'flyTo',
             rotateAnimation: false,
@@ -810,21 +813,21 @@ var config = {
         },
         {
             id: 'danzig-7',
-            alignment: 'center',
+            alignment: 'left',
             hidden: false,
-            title: 'Danzig Collapse',
+            //title: 'Danzig Collapse',
             //image: '',
             //caption: 'S',
             //website: '',
            // author: '',
             //legend: '',
-            description: "<video controls loop autoplay muted width='100%'><source src='movies/danzig-timelapse.mp44' type='video/mp4' ></video>Even as coastlines around the world are disappearing beneath the waves due to erosion and sea level rise, here Guyana, naturally, can appear out of the ocean, pulled and helped out by mangroves.",
+            description: "<video controls loop autoplay muted width='100%'><source src='movies/land-aggregation.mp4' type='video/mp4' ></video>Even as coastlines around the world are disappearing beneath the waves due to erosion and sea level rise, we see land in French Guiana appear out of the ocean, pulled and helped out by mangroves. The same phenomenon can happen here, in Guyana.",
             location: {
-                center: [-57.86458, 6.65785],
-                zoom: 15.05,
-                pitch: 0,
-                speed: 0.5,
-                bearing: 0
+                center: [-52.31310, 4.85152],
+                zoom: 9.97,
+                pitch: 0.00,
+                bearing: 0.00,
+                duration: 5000
             },
             mapAnimation: 'flyTo',
             rotateAnimation: false,
