@@ -329,7 +329,7 @@ var config = {
             //website: '<a href="https://www.native-land.ca" target="_blank">Native Land website</a>',
            // author: 'Rudo Kemper, Digital Democracy',
             //legend: '<span style="font-size: 0.85em;"><em>Indigenous community names on the map courtesy of Native Land Digital</em></span>',
-            description: "Mangroves and other salt-loving vegetation play a vital role in retaining this sediment and building out soil. They grow out onto these exposed mudflats, expanding farther into the ocean. This is how Guyana’s Low Coastal Plain was formed and why Guyana’s most fertile soils are found here.<br><br><center><iframe width='100%' height='200' src='https://www.youtube.com/embed/0dGNTktx-Pk?controls=0' title='YouTube video player' frameborder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture' allowfullscreen></center></iframe>",
+            description: "<p>Mangroves and other salt-loving vegetation play a vital role in retaining this sediment and building out soil. They grow out onto these exposed mudflats, expanding farther into the ocean. This is how Guyana’s Low Coastal Plain was formed and why Guyana’s most fertile soils are found here.</p><center><iframe width='100%' height='200' src='https://www.youtube.com/embed/0dGNTktx-Pk?controls=0' title='YouTube video player' frameborder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture' allowfullscreen></center></iframe>",
             location: {
                 center: [-59.36898, 8.18532],
                 zoom: 9.54,
@@ -366,7 +366,7 @@ var config = {
             //website: '<a href="https://www.native-land.ca" target="_blank">Native Land website</a>',
            // author: 'Rudo Kemper, Digital Democracy',
             //legend: '<span style="font-size: 0.85em;"><em>Indigenous community names on the map courtesy of Native Land Digital</em></span>',
-            description: "<video controls loop autoplay muted width='100%'><source src='movies/mangroves-stopping-waves.mp4' type='video/mp4' ></video> Along our coastline, Mangroves protect the inland by reducing the force of the ocean waves pounding against the shore.",
+            description: "<video controls loop autoplay muted width='100%'><source src='movies/mangroves-stopping-waves.mp4' type='video/mp4'></video> <p>Along our coastline, Mangroves protect the inland by reducing the force of the ocean waves pounding against the shore.</p>",
             location: {
                 center: [-59.36898, 8.18532],
                 zoom: 9.54,
@@ -442,7 +442,7 @@ var config = {
             //website: '',
            // author: '',
             //legend: '',
-            description:"<video controls loop autoplay muted width='100%'><source src='movies/concrete.mp4' type='video/mp4'></source></video>Hard coastal structures such as concrete seawalls cause wave energy to be reflected, creating more turbulence and much higher wave heights along these human-engineered shores, and ultimately making it difficult for mudflats to form and remain.",
+            description:"<video controls loop autoplay muted width='100%'><source src='movies/concrete.mp4' type='video/mp4'></source></video><p>Hard coastal structures such as concrete seawalls cause wave energy to be reflected, creating more turbulence and much higher wave heights along these human-engineered shores, and ultimately making it difficult for mudflats to form and remain.</p>",
             location: {
                 center: [-58.21107, 6.82913],
                 zoom: 15.97,
@@ -518,7 +518,7 @@ var config = {
             //website: '',
            // author: '',
             //legend: '',
-            description: "<image src='images/wave-dampen.png' alt='mangrove trees dramatically reduce the amplitude of waves.' width='100%'><br>By removing the mangroves and replacing them with concrete structures, the colonial powers set in motion the story of coastal erosion we see playing out today.<br><br><image src='images/wave-reflection.png' alt='concrete barriers increase the strength of waves and eroding forces.' width='100%'> ",
+            description: "<image src='images/wave-dampen.png' alt='mangrove trees dramatically reduce the amplitude of waves.' width='100%'><p>By removing the mangroves and replacing them with concrete structures, the colonial powers set in motion the story of coastal erosion we see playing out today.</p><image src='images/wave-reflection.png' alt='concrete barriers increase the strength of waves and eroding forces.' width='100%'> ",
             location: {
                 center: [-58.21107, 6.82913],
                 zoom: 17.97,
@@ -556,7 +556,7 @@ var config = {
             //website: '<a href="https://www.native-land.ca" target="_blank">Native Land website</a>',
            // author: 'Rudo Kemper, Digital Democracy',
             //legend: '<span style="font-size: 0.85em;"><em>Indigenous community names on the map courtesy of Native Land Digital</em></span>',
-            description: "Georgetown is particularly beset by flooding due to the engineering decisions that we continue to make about our coastline<br><br></center><iframe width='100%' height='200' src='https://www.youtube.com/embed/yuWAun1mJjM?controls=0' title='YouTube video player' frameborder='0' allow='accelerometer; autoplay = 'true'; clipboard-write; encrypted-media; gyroscope; picture-in-picture' allowfullscreen>",
+            description: "<p>Georgetown is particularly beset by flooding due to the engineering decisions that we continue to make about our coastline</p><iframe width='100%' height='200' src='https://www.youtube.com/embed/yuWAun1mJjM?controls=0' title='YouTube video player' frameborder='0' allow='accelerometer; autoplay = 'true'; clipboard-write; encrypted-media; gyroscope; picture-in-picture' allowfullscreen>",
             location: {
                 center: [-58.14961, 6.80326],
                 zoom: 11.98,
@@ -593,7 +593,7 @@ var config = {
             //website: '',
            // author: '',
             //legend: '',
-            description: "<video controls loop autoplay muted width='100%'><source src='movies/danzig-timelapse.mp4' type='video/mp4' ></video><br>The biggest breaches however, have occured between the villages of Danzig and Farifield. With the unexpected loss of a very thin strip of mangroves, the colonial era seawall was battered by hightides, eventually failing. Without the wall, and long devoid of mangroves, noting could stop the ocean from sweeping across the coastal plain.",
+            description: "<video controls loop autoplay muted width='100%'><source src='movies/danzig-timelapse.mp4' type='video/mp4' ></video><p>The biggest breaches however, have occured between the villages of Danzig and Farifield. With the unexpected loss of a very thin strip of mangroves, the colonial era seawall was battered by hightides, eventually failing. Without the wall, and long devoid of mangroves, noting could stop the ocean from sweeping across the coastal plain.</p>",
             location: {
                 center: [-57.86458, 6.65785],
                 zoom: 15.05,
@@ -631,7 +631,7 @@ var config = {
             //website: '',
            // author: '',
             //legend: '',
-            description: "Deep erosion in one spot along the former seawall forced the new sea defence to be built slightly inland, accidently setting the stage for a demonstration of the power of this hidden earth engine.<br><br>The results were devestating.<br></center><iframe width='100%'  height='300' src='https://www.youtube.com/embed/ojVULdJRiAs' title='YouTube video player' frameborder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture' allowfullscreen></iframe>",
+            description: "<p>Deep erosion in one spot along the former seawall forced the new sea defence to be built slightly inland, accidently setting the stage for a demonstration of the power of this hidden earth engine.</p><p>The results were devestating.</p><iframe width='100%'  height='300' src='https://www.youtube.com/embed/ojVULdJRiAs' title='YouTube video player' frameborder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture' allowfullscreen></iframe>",
             location: {
                 center: [-57.83390, 6.63358],
                 zoom: 14.41,
@@ -669,13 +669,13 @@ var config = {
             //website: '',
            // author: '',
             //legend: '',
-            description: "Millions of dollars worth occured in damage and loss to livelihoods. <br><br></center><iframe width='100%' height='300' src='https://www.youtube.com/embed/FWlSXmXRVzg'  title='YouTube video player' frameborder='0' allow='accelerometer; autoplay = 'true'; clipboard-write; encrypted-media; gyroscope; picture-in-picture' allowfullscreen>",
+            description: "<p>Millions of dollars were lost in damage land and livelihoods.</p><iframe width='100%' height='300' src='https://www.youtube.com/embed/FWlSXmXRVzg'  title='YouTube video player' frameborder='0' allow='accelerometer; autoplay = 'true'; clipboard-write; encrypted-media; gyroscope; picture-in-picture' allowfullscreen>",
             location: {
                 center: [-57.84776, 6.64562],
                 zoom: 14.41,
                 pitch: 67.50,
                 bearing: -62.40,
-                duration: 10000
+                duration: 20000
             },
             mapAnimation: 'flyTo',
             rotateAnimation: false,
@@ -706,7 +706,7 @@ var config = {
             //website: '',
            // author: '',
             //legend: '',
-            description: "After mutliple attempts and huge investments, the breach was sealed using traditional 'grey' engineeering, involving stone and concrete structures. <video controls loop autoplay muted width='100%'><source src='movies/danzig-wall.mp4' type='video/mp4' ></video>",
+            description: "<p>After mutliple attempts and huge investments, the breach was sealed using traditional 'grey' engineeering, involving stone and concrete structures.</p><video controls loop autoplay muted width='100%'><source src='movies/danzig-wall.mp4' type='video/mp4' ></video>",
             location: {
                 center: [-57.86075, 6.65932],
                 zoom: 14.41,
@@ -784,10 +784,10 @@ var config = {
             //website: '',
            // author: '',
             //legend: '',
-            description: "We can restart the powerful earth engine that made our coast in the first place, putting nature to work as we build a resilient future. By combining traditional “grey” sea defences (concrete walls, sea dams, jetties, etc.) with “green” nature-based approaches (mud, mangroves, saltmarshes, etc.), Guyana can once again gain the advantage in its battle with the sea. We can go beyond simply defending our lands and families from the ocean and begin to expand land into the sea.<br><br></center>",
+            description: "We can restart the powerful earth engine that made our coast in the first place, putting nature to work as we build a resilient future. By combining traditional “grey” sea defences (concrete walls, sea dams, jetties, etc.) with “green” nature-based approaches (mud, mangroves, saltmarshes, etc.), Guyana can once again gain the advantage in its battle with the sea. We can go beyond simply defending our lands and families from the ocean and begin to expand land into the sea.</center>",
             location: {
                 center: [-57.86075, 6.65932],
-                zoom: 14.41,
+                zoom: 15.41,
                 pitch: 64.50,
                 bearing: 45.60,
                 duration: 10000
@@ -821,7 +821,7 @@ var config = {
             //website: '',
            // author: '',
             //legend: '',
-            description: "<video controls loop autoplay muted width='100%'><source src='movies/land-aggregation.mp4' type='video/mp4' ></video>Even as coastlines around the world are disappearing due to erosion and sea level rise, we see land in French Guiana appear out of the ocean, pulled and helped out by mangroves. <br><br>The same phenomenon can be cultivated here.<br><br>We have the opportunity to put these practices into place. As our coastline erodes, it is vital to learn the lessons of regrowth and apply them.",
+            description: "<video controls loop autoplay muted width='100%'><source src='movies/land-aggregation.mp4' type='video/mp4'></video><p>Even as coastlines around the world are disappearing due to erosion and sea level rise, we see land in French Guiana appear out of the ocean, pulled and helped out by mangroves.</p><p>The same phenomenon can be cultivated here.</p><p>We have the opportunity to put these practices into place. As our coastline erodes, it is vital to learn the lessons of regrowth and apply them.</p>",
             location: {
                 center: [-52.31310, 4.85152],
                 zoom: 9.97,
@@ -858,12 +858,12 @@ var config = {
             //website: '',
            // author: '',
             //legend: '',
-            description: "<At Danzig, and other places affected by this issue, we can bring back the Mangroves as a barrier protecting the inland.",
+            description: "At Danzig, and other places affected by this issue, we can bring back the Mangroves as a barrier protecting the inland.",
             location: {
-                center: [-52.31310, 4.85152],
-                zoom: 9.97,
-                pitch: 0.00,
-                bearing: 0.00,
+                center: [-57.85330, 6.65887],
+                zoom: 13.21,
+                pitch: 32.43,
+                bearing: -176.80,
                 duration: 5000
             },
             mapAnimation: 'flyTo',
@@ -898,10 +898,10 @@ var config = {
             //legend: '',
             description: "In the early days, the Mangroves will need to be protected by engineering solutions, such as bamboo fences",
             location: {
-                center: [-52.31310, 4.85152],
-                zoom: 9.97,
-                pitch: 0.00,
-                bearing: 0.00,
+                center: [-57.85330, 6.65887],
+                zoom: 13.21,
+                pitch: 32.43,
+                bearing: -176.80,
                 duration: 5000
             },
             mapAnimation: 'flyTo',
@@ -935,11 +935,86 @@ var config = {
             //legend: '',
             description: "This solution can be extended along the coast to urban centers like Georgetown. ",
             location: {
-                center: [-58.13461, 6.82557],
-                zoom: 15.10,
-                pitch: 0.00,
-                bearing: -131.68,
-                duration: 5000
+                center: [-58.12561, 6.82825],
+                zoom: 13.21,
+                pitch: 32.43,
+                bearing: -176.80,
+                duration: 10000
+            },
+            mapAnimation: 'flyTo',
+            rotateAnimation: false,
+            spinGlobe: false,
+            mapInteractive: true,
+            callback: '',
+            onChapterEnter: [
+                // {
+                //     layer: 'layer-name',
+                //     opacity: 1,
+                //     duration: 5000
+                // }
+            ],
+            onChapterExit: [
+                // {
+                //     layer: 'layer-name',
+                //     opacity: 0
+                // }
+            ]
+        },
+
+        {
+            id: 'solutions-4',
+            alignment: 'center',
+            hidden: false,
+            //title: 'Danzig Collapse',
+            image: 'images/georgetown-mud.PNG',
+            //caption: 'S',
+            //website: '',
+           // author: '',
+            //legend: '',
+            description: "Over time, we can build onto the developing mudbanks to further protect our homes.",
+            location: {
+                center: [-58.08485, 6.82006],
+                zoom: 12.86,
+                pitch: 0,
+                bearing: 4.8,
+                duration: 10000
+            },
+            mapAnimation: 'flyTo',
+            rotateAnimation: false,
+            spinGlobe: false,
+            mapInteractive: true,
+            callback: '',
+            onChapterEnter: [
+                // {
+                //     layer: 'layer-name',
+                //     opacity: 1,
+                //     duration: 5000
+                // }
+            ],
+            onChapterExit: [
+                // {
+                //     layer: 'layer-name',
+                //     opacity: 0
+                // }
+            ]
+        },
+        {
+            id: 'finish',
+            alignment: 'center',
+            hidden: false,
+            //title: 'Danzig Collapse',
+            image: 'images/After.jpg',
+            //caption: 'S',
+            //website: '',
+           // author: '',
+            //legend: '',
+            description: "The way in front of us is clear, if we want to leave behind the practices of our colonial past and adopt solutions that are fitted to this land that we love.",
+            location: {
+                center: [-56.75296, 6.90604],
+                zoom: 7.05,
+                pitch: 47.00,
+                bearing: 137.60,
+                duration: 15000
             },
             mapAnimation: 'flyTo',
             rotateAnimation: false,
