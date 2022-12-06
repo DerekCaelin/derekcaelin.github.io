@@ -631,7 +631,7 @@ var config = {
             //website: '',
            // author: '',
             //legend: '',
-            description: "Deep erosion in one spot along the former seawall forced the new sea defence to be built slightly inland, accidently setting the stage for a demonstration of the power of this hidden earth engine.<br><br>The results are familiar.<br></center><iframe width='100%'  height='300' src='https://www.youtube.com/embed/ojVULdJRiAs' title='YouTube video player' frameborder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture' allowfullscreen></iframe>",
+            description: "Deep erosion in one spot along the former seawall forced the new sea defence to be built slightly inland, accidently setting the stage for a demonstration of the power of this hidden earth engine.<br><br>The results were devestating.<br></center><iframe width='100%'  height='300' src='https://www.youtube.com/embed/ojVULdJRiAs' title='YouTube video player' frameborder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture' allowfullscreen></iframe>",
             location: {
                 center: [-57.83390, 6.63358],
                 zoom: 14.41,
@@ -669,7 +669,7 @@ var config = {
             //website: '',
            // author: '',
             //legend: '',
-            description: "The result was millions of dollars worth in damage and loss to livelihoods. <br><br></center><iframe width='100%' height='300' src='https://www.youtube.com/embed/FWlSXmXRVzg'  title='YouTube video player' frameborder='0' allow='accelerometer; autoplay = 'true'; clipboard-write; encrypted-media; gyroscope; picture-in-picture' allowfullscreen>",
+            description: "Millions of dollars worth occured in damage and loss to livelihoods. <br><br></center><iframe width='100%' height='300' src='https://www.youtube.com/embed/FWlSXmXRVzg'  title='YouTube video player' frameborder='0' allow='accelerometer; autoplay = 'true'; clipboard-write; encrypted-media; gyroscope; picture-in-picture' allowfullscreen>",
             location: {
                 center: [-57.84776, 6.64562],
                 zoom: 14.41,
@@ -821,12 +821,124 @@ var config = {
             //website: '',
            // author: '',
             //legend: '',
-            description: "<video controls loop autoplay muted width='100%'><source src='movies/land-aggregation.mp4' type='video/mp4' ></video>Even as coastlines around the world are disappearing beneath the waves due to erosion and sea level rise, we see land in French Guiana appear out of the ocean, pulled and helped out by mangroves. The same phenomenon can happen here, in Guyana.",
+            description: "<video controls loop autoplay muted width='100%'><source src='movies/land-aggregation.mp4' type='video/mp4' ></video>Even as coastlines around the world are disappearing due to erosion and sea level rise, we see land in French Guiana appear out of the ocean, pulled and helped out by mangroves. <br><br>The same phenomenon can be cultivated here.<br><br>We have the opportunity to put these practices into place. As our coastline erodes, it is vital to learn the lessons of regrowth and apply them.",
             location: {
                 center: [-52.31310, 4.85152],
                 zoom: 9.97,
                 pitch: 0.00,
                 bearing: 0.00,
+                duration: 5000
+            },
+            mapAnimation: 'flyTo',
+            rotateAnimation: false,
+            spinGlobe: false,
+            mapInteractive: true,
+            callback: '',
+            onChapterEnter: [
+                // {
+                //     layer: 'layer-name',
+                //     opacity: 1,
+                //     duration: 5000
+                // }
+            ],
+            onChapterExit: [
+                // {
+                //     layer: 'layer-name',
+                //     opacity: 0
+                // }
+            ]
+        },
+        {
+            id: 'solutions-1',
+            alignment: 'center',
+            hidden: false,
+            //title: 'Danzig Collapse',
+            image: 'images/engineering-guidelines-1.jpg',
+            //caption: 'S',
+            //website: '',
+           // author: '',
+            //legend: '',
+            description: "<At Danzig, and other places affected by this issue, we can bring back the Mangroves as a barrier protecting the inland.",
+            location: {
+                center: [-52.31310, 4.85152],
+                zoom: 9.97,
+                pitch: 0.00,
+                bearing: 0.00,
+                duration: 5000
+            },
+            mapAnimation: 'flyTo',
+            rotateAnimation: false,
+            spinGlobe: false,
+            mapInteractive: true,
+            callback: '',
+            onChapterEnter: [
+                // {
+                //     layer: 'layer-name',
+                //     opacity: 1,
+                //     duration: 5000
+                // }
+            ],
+            onChapterExit: [
+                // {
+                //     layer: 'layer-name',
+                //     opacity: 0
+                // }
+            ]
+        },
+        
+        {
+            id: 'solutions-2',
+            alignment: 'center',
+            hidden: false,
+            //title: 'Danzig Collapse',
+            image: 'images/engineering-guidelines-2.bmp',
+            //caption: 'S',
+            //website: '',
+           // author: '',
+            //legend: '',
+            description: "In the early days, the Mangroves will need to be protected by engineering solutions, such as bamboo fences",
+            location: {
+                center: [-52.31310, 4.85152],
+                zoom: 9.97,
+                pitch: 0.00,
+                bearing: 0.00,
+                duration: 5000
+            },
+            mapAnimation: 'flyTo',
+            rotateAnimation: false,
+            spinGlobe: false,
+            mapInteractive: true,
+            callback: '',
+            onChapterEnter: [
+                // {
+                //     layer: 'layer-name',
+                //     opacity: 1,
+                //     duration: 5000
+                // }
+            ],
+            onChapterExit: [
+                // {
+                //     layer: 'layer-name',
+                //     opacity: 0
+                // }
+            ]
+        },
+        {
+            id: 'solutions-3',
+            alignment: 'center',
+            hidden: false,
+            //title: 'Danzig Collapse',
+            image: 'images/engineering-guildelines-3.bmp',
+            //caption: 'S',
+            //website: '',
+           // author: '',
+            //legend: '',
+            description: "This solution can be extended along the coast to urban centers like Georgetown. ",
+            location: {
+                center: [-58.13461, 6.82557],
+                zoom: 15.10,
+                pitch: 0.00,
+                bearing: -131.68,
                 duration: 5000
             },
             mapAnimation: 'flyTo',
