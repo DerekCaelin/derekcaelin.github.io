@@ -249,8 +249,8 @@ var config = {
             alignment: 'right',
             hidden: false,
             //title: 'Seawalls',
-            image: 'images/restoredforest.jpg',
-            caption: 'Restored black mangrove forest, Guyana. Image credit, NAREI',
+            //image: 'images/restoredforest.jpg',
+            //caption: 'Restored black mangrove forest, Guyana. Image credit, NAREI',
             //website: '<a href="https://www.native-land.ca" target="_blank">Native Land website</a>',
             //author: 'NAREI',
             //legend: '<span style="font-size: 0.85em;"><em>Indigenous community names on the map courtesy of Native Land Digital</em></span>',
@@ -291,7 +291,7 @@ var config = {
             //website: '<a href="https://www.native-land.ca" target="_blank">Native Land website</a>',
             //author: 'NAREI',
             //legend: '<span style="font-size: 0.85em;"><em>Indigenous community names on the map courtesy of Native Land Digital</em></span>',
-            description: "The flat land along the coast is made from the sediment washed into the ocean by Amazon that have been pushed up along the coast of South America. That's where the Dutch and the British grew their sugar cane here because of the rich, fertile soil that has emerged from the Amazon. That's why they brought our ancestors to this place, because of that coast there. ",
+            description: "The flat land along the coast is made from the sediment washed into the ocean by Amazon that have been pushed up along the coast of South America. That's why the Dutch and the British grew their sugar cane here; because of the rich, fertile soil that has emerged from the Amazon. That's why they brought our ancestors to this place. ",
             location: {
                 center: [-55.82815, 2.63535],
                 zoom: 6,
@@ -556,7 +556,7 @@ var config = {
             //website: '<a href="https://www.native-land.ca" target="_blank">Native Land website</a>',
            // author: 'Rudo Kemper, Digital Democracy',
             //legend: '<span style="font-size: 0.85em;"><em>Indigenous community names on the map courtesy of Native Land Digital</em></span>',
-            description: "<p>Georgetown is particularly beset by flooding due to the engineering decisions that we continue to make about our coastline</p><iframe width='100%' height='200' src='https://www.youtube.com/embed/yuWAun1mJjM?controls=0' title='YouTube video player' frameborder='0' allow='accelerometer; autoplay = 'true'; clipboard-write; encrypted-media; gyroscope; picture-in-picture' allowfullscreen>",
+            description: "<p>Georgetown is particularly beset by flooding due to the engineering decisions that we continue to make about our coastline.</p><iframe width='100%' height='200' src='https://www.youtube.com/embed/yuWAun1mJjM?controls=0' title='YouTube video player' frameborder='0' allow='accelerometer; autoplay = 'true'; clipboard-write; encrypted-media; gyroscope; picture-in-picture' allowfullscreen>",
             location: {
                 center: [-58.14961, 6.80326],
                 zoom: 11.98,
@@ -631,7 +631,7 @@ var config = {
             //website: '',
            // author: '',
             //legend: '',
-            description: "<p>Deep erosion in one spot along the former seawall forced the new sea defence to be built slightly inland, accidently setting the stage for a demonstration of the power of this hidden earth engine.</p><p>The results were devestating.</p><iframe width='100%'  height='300' src='https://www.youtube.com/embed/ojVULdJRiAs' title='YouTube video player' frameborder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture' allowfullscreen></iframe>",
+            description: "<p>Deep erosion in one spot along the former seawall forced the new sea defence to be built slightly inland, accidently setting the stage for a demonstration of the power of this hidden earth engine.</p><p>The results were devestating.</p><br><iframe width='100%'  height='300' src='https://www.youtube.com/embed/ojVULdJRiAs' title='YouTube video player' frameborder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture' allowfullscreen></iframe>",
             location: {
                 center: [-57.83390, 6.63358],
                 zoom: 14.41,
@@ -675,7 +675,7 @@ var config = {
                 zoom: 14.41,
                 pitch: 67.50,
                 bearing: -62.40,
-                duration: 20000
+                duration: 30000
             },
             mapAnimation: 'flyTo',
             rotateAnimation: false,
@@ -823,8 +823,8 @@ var config = {
             //legend: '',
             description: "<video controls loop autoplay muted width='100%'><source src='movies/land-aggregation.mp4' type='video/mp4'></video><p>Even as coastlines around the world are disappearing due to erosion and sea level rise, we see land in French Guiana appear out of the ocean, pulled and helped out by mangroves.</p><p>The same phenomenon can be cultivated here.</p><p>We have the opportunity to put these practices into place. As our coastline erodes, it is vital to learn the lessons of regrowth and apply them.</p>",
             location: {
-                center: [-52.31310, 4.85152],
-                zoom: 9.97,
+                center: [-52.22495, 4.84870],
+                zoom: 11.74,
                 pitch: 0.00,
                 bearing: 0.00,
                 duration: 5000
