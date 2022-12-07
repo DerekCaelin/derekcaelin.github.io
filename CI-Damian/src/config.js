@@ -64,9 +64,7 @@ var config = {
             //title: 'Introduction',
             image: 'images/Before.jpg',
             caption: 'An illustration of a stone barrier along an urban center, exposed to the ocean. Image by Amy West.',
-            //website: '<a href="https://www.native-land.ca" target="_blank">Native Land website</a>',
-            //author: 'Rudo Kemper, Digital Democracy',
-            //legend: '<span style="font-size: 0.85em;"><em>Indigenous community names on the map courtesy of Native Land Digital</em></span>',
+            
             description: "For coastal cities in Guyana, the sea is a hostile force. As the waves batter our sea walls and flood our streets, we see that a changing world may damage our cities beyond repair. Some project that the city of Georgetown could be washed away by the 2030s.",
             location: {
                 center: [-58.25171, 7.14767],
@@ -107,11 +105,11 @@ var config = {
             //legend: '<span style="font-size: 0.85em;"><em>Indigenous community names on the map courtesy of Native Land Digital</em></span>',
             description: "But what if the same forces that are battering our cities can be used to help them grow?  What if we can find a harness nature to grow out into the ocean rather than just be trapped, defending and retreating? ",
             location: {
-                center: [-58.20158, 6.76159],
-                zoom: 9.0,
+                center: [-58.25171, 7.14767],
+                zoom: 7,
                 pitch: 30.5,
                 bearing: -54.4,
-                duration: 10000
+                duration: 20000
                 
             },
             mapAnimation: 'flyTo',
@@ -180,12 +178,12 @@ var config = {
             //website: '<a href="https://www.native-land.ca" target="_blank">Native Land website</a>',
            // author: 'Rudo Kemper, Digital Democracy',
             //legend: '<span style="font-size: 0.85em;"><em>Indigenous community names on the map courtesy of Native Land Digital</em></span>',
-            description: "Guyana sits on the 2 billion year old Guiana Sheild, the oldest mountain range in the western hemispehere. Known for its strange table top mountains, that sit above the clouds like islands in the sky, this landscape is home to isolated and unique species found nowehere else on the planet. The age and mystery of the landscape has inpired countless myths, books and movies like 'The Lost World' by Arthur Conan Doyle and Diney's 'Up'. To some of Guyana's inidgenous people, thes mountains are spiritual places, steeped in stories of creation, life and water.",
+            description: "Guyana sits on the 2 billion year old Guiana Sheild, the oldest mountain range in the western hemispehere. Known for its strange table top mountains, that sit above the clouds like islands in the sky, this landscape is home to isolated and unique species found nowehere else on the planet. The age and mystery of the landscape has inpired countless myths, books and movies like 'The Lost World' by Arthur Conan Doyle and Diney's 'Up'. To some of Guyana's indigenous people, thes mountains are spiritual places, steeped in stories of creation, life and water.",
             location: {
                 center: [-59.55538, 6.33443],
                 zoom: 6.48,
                 pitch: 0,
-                duration: 5000,
+                duration: 20000,
                 bearing: 0
             },
             mapAnimation: 'flyTo',
@@ -521,9 +519,9 @@ var config = {
             description: "<image src='images/wave-dampen.png' alt='mangrove trees dramatically reduce the amplitude of waves.' width='100%'><p>By removing the mangroves and replacing them with concrete structures, the colonial powers set in motion the story of coastal erosion we see playing out today.</p><image src='images/wave-reflection.png' alt='concrete barriers increase the strength of waves and eroding forces.' width='100%'> ",
             location: {
                 center: [-58.21107, 6.82913],
-                zoom: 17.97,
+                zoom: 16.5,
                 pitch: 0,
-                duration: 10000,
+                duration: 20000,
                 bearing: 0
             },
             mapAnimation: 'flyTo',
@@ -593,7 +591,7 @@ var config = {
             //website: '',
            // author: '',
             //legend: '',
-            description: "<video controls loop autoplay muted width='100%'><source src='movies/danzig-timelapse.mp4' type='video/mp4' ></video><p>The biggest breaches however, have occured between the villages of Danzig and Farifield. With the unexpected loss of a very thin strip of mangroves, the colonial era seawall was battered by hightides, eventually failing. Without the wall, and long devoid of mangroves, noting could stop the ocean from sweeping across the coastal plain.</p>",
+            description: "<video controls loop autoplay muted width='100%'><source src='movies/danzig-timelapse.mp4' type='video/mp4' ></video><p>The biggest breaches, however, have occured between the villages of Danzig and Fairfield. With the unexpected loss of a very thin strip of mangroves, the colonial era seawall was battered by high tides, eventually failing. Without the wall, and long devoid of mangroves, notihng could stop the ocean from sweeping across the coastal plain.</p>",
             location: {
                 center: [-57.86458, 6.65785],
                 zoom: 15.05,
@@ -621,7 +619,7 @@ var config = {
             ]
         },
 
-        {
+       /* {
             id: 'danzig-4',
             alignment: 'center',
             hidden: false,
@@ -631,7 +629,7 @@ var config = {
             //website: '',
            // author: '',
             //legend: '',
-            description: "<p>Deep erosion in one spot along the former seawall forced the new sea defence to be built slightly inland, accidently setting the stage for a demonstration of the power of this hidden earth engine.</p><p>The results were devestating.</p><br><iframe width='100%'  height='300' src='https://www.youtube.com/embed/ojVULdJRiAs' title='YouTube video player' frameborder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture' allowfullscreen></iframe>",
+            description: "<p>Deep erosion in one spot along the former seawall forced the new sea defence to be built slightly inland, accidentally setting the stage for a demonstration of the power the mangrove-powered earth engine.</p><p>The results were devestating.</p><br><iframe width='100%'  height='300' src='https://www.youtube.com/embed/ojVULdJRiAs' title='YouTube video player' frameborder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture' allowfullscreen></iframe>",
             location: {
                 center: [-57.83390, 6.63358],
                 zoom: 14.41,
@@ -658,7 +656,7 @@ var config = {
                 // }
             ]
         },
-
+*/
         {
             id: 'danzig-2',
             alignment: 'center',
@@ -706,7 +704,7 @@ var config = {
             //website: '',
            // author: '',
             //legend: '',
-            description: "<p>After mutliple attempts and huge investments, the breach was sealed using traditional 'grey' engineeering, involving stone and concrete structures.</p><video controls loop autoplay muted width='100%'><source src='movies/danzig-wall.mp4' type='video/mp4' ></video>",
+            description: "<p>After multiple attempts and huge investments, the breach was sealed using traditional 'grey' engineeering, involving stone and concrete structures.</p><video controls loop autoplay muted width='100%'><source src='movies/danzig-wall.mp4' type='video/mp4' ></video>",
             location: {
                 center: [-57.86075, 6.65932],
                 zoom: 14.41,
@@ -787,10 +785,10 @@ var config = {
             description: "We can restart the powerful earth engine that made our coast in the first place, putting nature to work as we build a resilient future. By combining traditional “grey” sea defences (concrete walls, sea dams, jetties, etc.) with “green” nature-based approaches (mud, mangroves, saltmarshes, etc.), Guyana can once again gain the advantage in its battle with the sea. We can go beyond simply defending our lands and families from the ocean and begin to expand land into the sea.</center>",
             location: {
                 center: [-57.86075, 6.65932],
-                zoom: 15.41,
+                zoom: 15,
                 pitch: 64.50,
                 bearing: 45.60,
-                duration: 10000
+                duration: 20000
             },
             mapAnimation: 'flyTo',
             rotateAnimation: false,
@@ -1010,11 +1008,11 @@ var config = {
             //legend: '',
             description: "The way in front of us is clear, if we want to leave behind the practices of our colonial past and adopt solutions that are fitted to this land that we love.",
             location: {
-                center: [-56.75296, 6.90604],
+                center: [-59.16827, 7.30921],
                 zoom: 7.05,
                 pitch: 47.00,
                 bearing: 137.60,
-                duration: 15000
+                duration: 30000
             },
             mapAnimation: 'flyTo',
             rotateAnimation: false,
