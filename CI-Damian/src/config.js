@@ -18,7 +18,7 @@ var config = {
     subtitle: 'History and Vision',
     byline: 'Conservation International',
     mobileview: '<div id="rotate-mobile"><em>For optimal viewing of this storytelling map on mobile, rotate your device to a horizontal orientation.</em><br><br><img src="images/device.png">', // to add custom messaging in the header for mobile devices
-    footer: 'Source: source citations, etc.<br> Created using <a href="https://github.com/mapbox/storytelling" target="_blank">Mapbox Storytelling</a> template.',
+    footer: 'Source: Damian Fernandes, with support of Derek Caelin.<br> Created using <a href="https://github.com/mapbox/storytelling" target="_blank">Mapbox Storytelling</a> template.',
     chapters: [
         {
             id: 'before',
@@ -43,11 +43,10 @@ var config = {
             mapInteractive: false,
             callback: '',
             onChapterEnter: [
-                // {
-                //     layer: 'layer-name',
-                //     opacity: 1,
-                //     duration: 5000
-                // }
+                {
+                    layer: 'highlands-raster',
+                    opacity: 0
+                }
             ],
             onChapterExit: [
                 // {
@@ -172,7 +171,7 @@ var config = {
             id: 'highlands1',
             alignment: 'left',
             hidden: false,
-            title: 'The Highlands',
+            //title: 'The Highlands',
             //image: 'images/overview-map.png',
             //caption: 'Source image caption',
             //website: '<a href="https://www.native-land.ca" target="_blank">Native Land website</a>',
@@ -192,36 +191,58 @@ var config = {
             mapInteractive: true,
             callback: '',
             onChapterEnter: [
-                // {
-                //     layer: 'layer-name',
-                //     opacity: 1,
-                //     duration: 5000
-                // }
+                {
+                     layer: 'highlands-raster',
+                     opacity: 1,
+                     duration: 3000
+                }
             ],
             onChapterExit: [
-                // {
-                //     layer: 'layer-name',
-                //     opacity: 0
-                // }
+                {
+                    layer: 'highlands-raster',
+                    opacity: 0,
+                    duration: 3000
+                },
+                {
+                    layer: 'admin-0-boundary-disputed',
+                    opacity: 0,
+                    duration: 3000
+                },
+                {
+                    layer: 'admin-0-boundary',
+                    opacity: 0,
+                    duration: 3000
+                },
+                {
+                    layer: 'admin-1-boundary',
+                    opacity: 0,
+                    duration: 3000
+                },
+                {
+                    layer: 'admin-0-boundary-bg',
+                    opacity: 0,
+                    duration: 3000
+                },
+                {
+                    layer: 'admin-1-boundary-bg',
+                    opacity: 0,
+                    duration: 3000
+                }
             ]
         },
         {
-            id: 'highlands2',
-            alignment: 'full',
+            id: 'rivers-1',
+            alignment: 'left',
             hidden: false,
-            title: 'The Highlands',
-            image: 'images/guyana_highlands.png',
-            //caption: 'Source image caption',
-            //website: '<a href="https://www.native-land.ca" target="_blank">Native Land website</a>',
-           // author: 'Rudo Kemper, Digital Democracy',
-            //legend: '<span style="font-size: 0.85em;"><em>Indigenous community names on the map courtesy of Native Land Digital</em></span>',
-            description: "These rivers connect Guyana's ancient mountains to its coast; one of the planet's youngest landscapes still emerging from the Atlantic. These rivers transport sediment to our coast, where it is swept up into a natural land-forming phenomenon that we are ony now beginning to understand. The Amazon delivers over 1.1 billion tons of suspended sediment and 270 million tons of dissolved organic matter into the Atlantic Ocean every year. This enormous plume of mud, which can be seen from space, kickstarts a giant “earth-engine” that has powered the creation of Guyana’s coast for millions of years.",
+            //title: "Guyana's Rivers",
+       
+            description: "These rivers connect Guyana's ancient mountains to its coast; one of the planet's youngest landscapes still emerging from the Atlantic. These rivers transport sediment to our coast, where it is swept up into a natural land-forming phenomenon that we are ony now beginning to understand.",
             location: {
-                center: [-59.91014, 6.91520],
-                zoom: 7.43,
-                pitch: 64.00,
-                speed: 0.5,
-                bearing:  -99.20
+                center: [-59.55538, 6.33443],
+                zoom: 6.48,
+                pitch: 0,
+                bearing:  0,
+                duration: 5000
             },
             mapAnimation: 'flyTo',
             rotateAnimation: false,
@@ -243,6 +264,117 @@ var config = {
             ]
         },
         {
+            id: 'rivers-2',
+            alignment: 'left',
+            hidden: false,
+            //title: 'The Amazon',
+            //image: 'images/guyana_highlands.png',
+            //caption: 'Source image caption',
+            //website: '<a href="https://www.native-land.ca" target="_blank">Native Land website</a>',
+           // author: 'Rudo Kemper, Digital Democracy',
+            //legend: '<span style="font-size: 0.85em;"><em>Indigenous community names on the map courtesy of Native Land Digital</em></span>',
+            description: "The Amazon delivers over 1.1 billion tons of suspended sediment and 270 million tons of dissolved organic matter into the Atlantic Ocean every year. This enormous plume of mud, which can be seen from space, kickstarts a giant “earth-engine” that has powered the creation of Guyana’s coast for millions of years.",
+            location: {
+                center: [-62.79744, -3.18111],
+                zoom: 4.95,
+                pitch: 0,
+                bearing: 0,
+                duration: 5000
+            },
+            mapAnimation: 'flyTo',
+            rotateAnimation: false,
+            spinGlobe: false,
+            mapInteractive: true,
+            callback: '',
+            onChapterEnter: [
+                // {
+                //     layer: 'layer-name',
+                //     opacity: 1,
+                //     duration: 5000
+                // }
+            ],
+            onChapterExit: [
+                // {
+                //     layer: 'layer-name',
+                //     opacity: 0
+                // }
+            ]
+        },
+        {
+            id: 'mud2',
+            alignment: 'center',
+            hidden: false,
+            //title: 'Seawalls',
+            image: 'images/mudbanks_move.gif',
+            //caption: 'Restored black mangrove forest, Guyana. Image credit, NAREI',
+            //website: '<a href="https://www.native-land.ca" target="_blank">Native Land website</a>',
+            //author: 'NAREI',
+            //legend: '<span style="font-size: 0.85em;"><em>Indigenous community names on the map courtesy of Native Land Digital</em></span>',
+            description: "The flat land along the coast is made from the sediment washed into the ocean by Amazon that have been pushed up along the coast of South America. That's why the Dutch and the British grew their sugar cane here; because of the rich, fertile soil that has emerged from the Amazon. That's why they brought our ancestors to this place. ",
+            location: {
+                center: [-55.82815, 2.63535],
+                zoom: 6,
+                pitch: 0,
+                bearing: 0,
+                duration: 3000
+            },
+            mapAnimation: 'flyTo',
+            rotateAnimation: false,
+            spinGlobe: false,
+            mapInteractive: true,
+            callback: '',
+            onChapterEnter: [
+                // {
+                //     layer: 'layer-name',
+                //     opacity: 1,
+                //     duration: 5000
+                // }
+            ],
+            onChapterExit: [
+                // {
+                //     layer: 'layer-name',
+                //     opacity: 0
+                // }
+            ]
+        },
+        {
+            id: 'danzig-7',
+            alignment: 'left',
+            hidden: false,
+            //title: 'Danzig Collapse',
+            //image: '',
+            //caption: 'S',
+            //website: '',
+           // author: '',
+            //legend: '',
+            description: "<video controls loop autoplay muted width='100%'><source src='movies/land-aggregation.mp4' type='video/mp4'></video><p>Even as coastlines around the world are disappearing due to erosion and sea level rise, we see land in French Guiana appear out of the ocean, pulled and helped out by mangroves.</p><p>The same phenomenon can be cultivated in Guyana.</p><p>We have the opportunity to put these practices into place. As our coastline erodes, it is vital to learn the lessons of regrowth and apply them.</p>",
+            location: {
+                center: [-52.22495, 4.84870],
+                zoom: 11.74,
+                pitch: 0.00,
+                bearing: 0.00,
+                duration: 10000
+            },
+            mapAnimation: 'flyTo',
+            rotateAnimation: false,
+            spinGlobe: false,
+            mapInteractive: true,
+            callback: '',
+            onChapterEnter: [
+                // {
+                //     layer: 'layer-name',
+                //     opacity: 1,
+                //     duration: 5000
+                // }
+            ],
+            onChapterExit: [
+                // {
+                //     layer: 'layer-name',
+                //     opacity: 0
+                // }
+            ]
+        },
+       /* {
             id: 'mud1',
             alignment: 'right',
             hidden: false,
@@ -279,61 +411,19 @@ var config = {
                 // }
             ]
         },
-        {
-            id: 'mud2',
-            alignment: 'center',
-            hidden: false,
-            //title: 'Seawalls',
-            image: 'images/mudbanks_move.gif',
-            //caption: 'Restored black mangrove forest, Guyana. Image credit, NAREI',
-            //website: '<a href="https://www.native-land.ca" target="_blank">Native Land website</a>',
-            //author: 'NAREI',
-            //legend: '<span style="font-size: 0.85em;"><em>Indigenous community names on the map courtesy of Native Land Digital</em></span>',
-            description: "The flat land along the coast is made from the sediment washed into the ocean by Amazon that have been pushed up along the coast of South America. That's why the Dutch and the British grew their sugar cane here; because of the rich, fertile soil that has emerged from the Amazon. That's why they brought our ancestors to this place. ",
-            location: {
-                center: [-55.82815, 2.63535],
-                zoom: 6,
-                pitch: 0,
-                speed: 0.5,
-                bearing: 0
-            },
-            mapAnimation: 'flyTo',
-            rotateAnimation: false,
-            spinGlobe: false,
-            mapInteractive: true,
-            callback: '',
-            onChapterEnter: [
-                // {
-                //     layer: 'layer-name',
-                //     opacity: 1,
-                //     duration: 5000
-                // }
-            ],
-            onChapterExit: [
-                // {
-                //     layer: 'layer-name',
-                //     opacity: 0
-                // }
-            ]
-        },
+       */
         
         {
             id: 'mangrove-coast',
             alignment: 'right',
             hidden: false,
-            title: 'Mangroves',
-            //image: 'images/overview-map.png',
-            //caption: 'Source image caption',
-            //website: '<a href="https://www.native-land.ca" target="_blank">Native Land website</a>',
-           // author: 'Rudo Kemper, Digital Democracy',
-            //legend: '<span style="font-size: 0.85em;"><em>Indigenous community names on the map courtesy of Native Land Digital</em></span>',
             description: "<p>Mangroves and other salt-loving vegetation play a vital role in retaining this sediment and building out soil. They grow out onto these exposed mudflats, expanding farther into the ocean. This is how Guyana’s Low Coastal Plain was formed and why Guyana’s most fertile soils are found here.</p><center><iframe width='100%' height='200' src='https://www.youtube.com/embed/0dGNTktx-Pk?controls=0' title='YouTube video player' frameborder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture' allowfullscreen></center></iframe>",
             location: {
-                center: [-59.36898, 8.18532],
-                zoom: 9.54,
-                pitch: 7.0,
-                bearing: 0,
-                duration: 5000
+                center: [-59.43067, 8.21821],
+                zoom: 14.544,
+                pitch: 15.5,
+                bearing: -148.00,
+                duration: 10000
             },
             mapAnimation: 'flyTo',
             rotateAnimation: false,
@@ -355,7 +445,7 @@ var config = {
             ]
         },
         {
-            id: 'mangrove-coast',
+            id: 'mangrove-coast2',
             alignment: 'right',
             hidden: false,
             //title: 'Mangroves',
@@ -366,11 +456,11 @@ var config = {
             //legend: '<span style="font-size: 0.85em;"><em>Indigenous community names on the map courtesy of Native Land Digital</em></span>',
             description: "<video controls loop autoplay muted width='100%'><source src='movies/mangroves-stopping-waves.mp4' type='video/mp4'></video> <p>Along our coastline, Mangroves protect the inland by reducing the force of the ocean waves pounding against the shore.</p>",
             location: {
-                center: [-59.36898, 8.18532],
-                zoom: 9.54,
-                pitch: 7.0,
-                bearing: 0,
-                duration: 5000
+                center: [-59.41192, 8.207471],
+                zoom: 14.544,
+                pitch: 15.5,
+                bearing: -148.00,
+                duration: 20000
             },
             mapAnimation: 'flyTo',
             rotateAnimation: false,
@@ -393,11 +483,11 @@ var config = {
         },
     
         {
-            id: 'colonial legacy',
-            alignment: 'center',
+            id: 'colonial-legacy',
+            alignment: 'left',
             hidden: false,
             title: 'Colonial Legacy',
-            image: 'images/old-map.jpg',
+            //image: 'images/old-map.jpg',
             //caption: 'Source image caption',
             //website: '',
            // author: '',
@@ -415,17 +505,18 @@ var config = {
             mapInteractive: true,
             callback: '',
             onChapterEnter: [
-                // {
-                //     layer: 'layer-name',
-                //     opacity: 1,
-                //     duration: 5000
-                // }
+                {
+                     layer: 'old-map',
+                     opacity: 1,
+                     duration: 3000
+                 }
             ],
             onChapterExit: [
-                // {
-                //     layer: 'layer-name',
-                //     opacity: 0
-                // }
+                {
+                     layer: 'old-map',
+                     opacity: 0,
+                     duration: 3000
+                }
             ]
         },
 
@@ -667,7 +758,7 @@ var config = {
             //website: '',
            // author: '',
             //legend: '',
-            description: "<p>Millions of dollars were lost in damage land and livelihoods.</p><iframe width='100%' height='300' src='https://www.youtube.com/embed/FWlSXmXRVzg'  title='YouTube video player' frameborder='0' allow='accelerometer; autoplay = 'true'; clipboard-write; encrypted-media; gyroscope; picture-in-picture' allowfullscreen>",
+            description: "<p>Millions of dollars were lost in damage to land and livelihoods.</p><iframe width='100%' height='300' src='https://www.youtube.com/embed/FWlSXmXRVzg'  title='YouTube video player' frameborder='0' allow='accelerometer; autoplay = 'true'; clipboard-write; encrypted-media; gyroscope; picture-in-picture' allowfullscreen>",
             location: {
                 center: [-57.84776, 6.64562],
                 zoom: 14.41,
@@ -782,7 +873,7 @@ var config = {
             //website: '',
            // author: '',
             //legend: '',
-            description: "We can restart the powerful earth engine that made our coast in the first place, putting nature to work as we build a resilient future. By combining traditional “grey” sea defences (concrete walls, sea dams, jetties, etc.) with “green” nature-based approaches (mud, mangroves, saltmarshes, etc.), Guyana can once again gain the advantage in its battle with the sea. We can go beyond simply defending our lands and families from the ocean and begin to expand land into the sea.</center>",
+            description: "We can restart the powerful earth engine that made our coast in the first place, putting nature to work as we build a resilient future. By combining traditional “grey” sea defences (concrete walls, sea dams, jetties, etc.) with “green” nature-based approaches (mud, mangroves, saltmarshes, etc.), Guyana can once again gain the advantage in its battle with the sea. We can go beyond simply defending our lands and families from the ocean and begin to extend outwards.</center>",
             location: {
                 center: [-57.86075, 6.65932],
                 zoom: 15,
@@ -809,43 +900,7 @@ var config = {
                 // }
             ]
         },
-        {
-            id: 'danzig-7',
-            alignment: 'left',
-            hidden: false,
-            //title: 'Danzig Collapse',
-            //image: '',
-            //caption: 'S',
-            //website: '',
-           // author: '',
-            //legend: '',
-            description: "<video controls loop autoplay muted width='100%'><source src='movies/land-aggregation.mp4' type='video/mp4'></video><p>Even as coastlines around the world are disappearing due to erosion and sea level rise, we see land in French Guiana appear out of the ocean, pulled and helped out by mangroves.</p><p>The same phenomenon can be cultivated here.</p><p>We have the opportunity to put these practices into place. As our coastline erodes, it is vital to learn the lessons of regrowth and apply them.</p>",
-            location: {
-                center: [-52.22495, 4.84870],
-                zoom: 11.74,
-                pitch: 0.00,
-                bearing: 0.00,
-                duration: 5000
-            },
-            mapAnimation: 'flyTo',
-            rotateAnimation: false,
-            spinGlobe: false,
-            mapInteractive: true,
-            callback: '',
-            onChapterEnter: [
-                // {
-                //     layer: 'layer-name',
-                //     opacity: 1,
-                //     duration: 5000
-                // }
-            ],
-            onChapterExit: [
-                // {
-                //     layer: 'layer-name',
-                //     opacity: 0
-                // }
-            ]
-        },
+        
         {
             id: 'solutions-1',
             alignment: 'center',
@@ -961,10 +1016,10 @@ var config = {
 
         {
             id: 'solutions-4',
-            alignment: 'center',
+            alignment: 'left',
             hidden: false,
             //title: 'Danzig Collapse',
-            image: 'images/georgetown-mud.PNG',
+            //image: 'images/georgetown-mud.PNG',
             //caption: 'S',
             //website: '',
            // author: '',
@@ -975,7 +1030,7 @@ var config = {
                 zoom: 12.86,
                 pitch: 0,
                 bearing: 4.8,
-                duration: 10000
+                duration: 5000
             },
             mapAnimation: 'flyTo',
             rotateAnimation: false,
@@ -983,17 +1038,18 @@ var config = {
             mapInteractive: true,
             callback: '',
             onChapterEnter: [
-                // {
-                //     layer: 'layer-name',
-                //     opacity: 1,
-                //     duration: 5000
-                // }
+                {
+                     layer: 'georgetown-mud',
+                     opacity: 1,
+                     duration: 3000
+                }
             ],
             onChapterExit: [
-                // {
-                //     layer: 'layer-name',
-                //     opacity: 0
-                // }
+                {
+                    layer: 'georgetown-mud',
+                    opacity: 0,
+                    duration: 3000
+               }
             ]
         },
         {

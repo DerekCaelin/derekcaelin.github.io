@@ -185,7 +185,6 @@
             #features {
                 width: 90vw;
                 margin: 0 auto;
-                align-self: center;
             }
 
             #header img {
@@ -530,8 +529,29 @@
                     'tileSize': 512,
                     'maxzoom': 14
                 });
+                
                 // add the DEM source as a terrain layer with exaggerated height
                 map.setTerrain({ 'source': 'mapbox-dem', 'exaggeration': 1.5 });
+
+                map.addSource('GuyanaHighlands', {
+                    'type': "image",
+                    'url': "images/guyana_highlands.png",
+                    'coordinates': [
+                        [-60.15265, 7.06715],
+                        [-45.56387, 7.06715],
+                        [-45.56387, -5.95176],
+                        [-60.15265, -5.95176]
+                    ]
+                });
+               
+                map.addLayer({
+                    'id': "overlay-layer",
+                    'type': "image",
+                    'source': "GuyanaHighlands",
+                    'paint':{
+                        "raster-opacity": 0.85
+                    }
+                });
 
                 // add a sky layer that will show when the map is highly pitched
                 map.addLayer({
@@ -543,6 +563,7 @@
                         'sky-atmosphere-sun-intensity': 15
                     }
                 });
+                
             };
 
             // add custom layers
