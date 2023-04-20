@@ -46,11 +46,7 @@ var config = {
                 {
                     layer: 'possibleBikeFacilities',
                     opacity: 0
-                },
-                {
-                    layer: 'landuse',
-                    opacity: 0
-                },
+                },             
                 {
                     layer: 'Bikeway',
                     opacity: 0
@@ -106,10 +102,6 @@ var config = {
             hidden: true,
             //title: 'Introduction',
             image: 'images/big-map-scan.jpeg',
-            //caption: 'An illustration of a stone barrier along an urban center, exposed to the ocean. Image by Amy West.',
-            //website: '<a href="https://www.native-land.ca" target="_blank">Native Land website</a>',
-            //author: 'Rudo Kemper, Digital Democracy',
-            //legend: '<span style="font-size: 0.85em;"><em>Indigenous community names on the map courtesy of Native Land Digital</em></span>',
             description: "",
             location: {
                 center: [-72.66415, 41.65905],
@@ -143,9 +135,6 @@ var config = {
             title: 'Walk Bike Feedback',
             image: 'images/feedback1zoom.jpg',
             caption: '',
-            //website: '<a href="https://www.native-land.ca" target="_blank">Native Land website</a>',
-            //author: 'Rudo Kemper, Digital Democracy',
-            //legend: '<span style="font-size: 0.85em;"><em>Indigenous community names on the map courtesy of Native Land Digital</em></span>',
             description: "We brought the plans to various citizen groups for their feedback. First, we spoke to representatives from Walk-Bike Rocky Hill, who submitted a proposal for a bike lanes to the town in 2020.",
             location: {
                 center: [-72.66415, 41.65905],
@@ -228,12 +217,12 @@ var config = {
             alignment: 'left',
             hidden: false,
             title: 'Teens',
-            //image: 'images/streetpoint.png',
+            image: 'images/teens.png',
             caption: '',
             //website: '<a href="https://www.native-land.ca" target="_blank">Native Land website</a>',
             //author: 'Rudo Kemper, Digital Democracy',
             //legend: '<span style="font-size: 0.85em;"><em>Indigenous community names on the map courtesy of Native Land Digital</em></span>',
-            description: "Finally, we came to the teen council and asked for feedback from our town’s young people. ",
+            description: "Finally, we came to the Teen Council and asked for feedback from our town’s young people, who in this session were from the south and western sides of town.",
             location: {
                 center: [-72.66415, 41.65905],
                 zoom: 12.47,
@@ -305,7 +294,7 @@ var config = {
             id: 'key locations',
             alignment: 'left',
             hidden: false,
-            title: 'Connect the town',
+            title: 'Bike Routes Should Connect to Key Town Infrastructure',
             // image: 'images/streetpoint.png',
             caption: '',
             //website: '<a href="https://www.native-land.ca" target="_blank">Native Land website</a>',
@@ -325,29 +314,101 @@ var config = {
             callback: '',
             onChapterEnter: [
                 {
-                    layer: 'landuse',
-                    opacity: .75
-                }
+                    layer: 'rocky-hill-parks',
+                    opacity: .9
+                },
+                {
+                    layer: 'rocky-hill-schools',
+                    opacity: .9
+                },
+                {
+                    layer: 'rocky-hill-town-campus',
+                    opacity: .9
+                },
+                {
+                    layer: 'rocky-hill-groceries-',
+                    opacity: 1
+                },
                 
             ],
             onChapterExit: [
                 {
-                    layer: 'feedback1',
-                    opacity: 0
+                    //layer: 'feedback1',
+                   // opacity: 0
                 }
             ]
         },
         {
-            id: 'key locations + original',
+            id: 'key locations-2',
+            alignment: 'right',
+            hidden: false,
+            caption: '',
+            description: "In particular, the east side of town hosts the town campus, multiple parks, grocery stores, religous buildings, and schools.",
+            location: {
+                center: [-72.62991, 41.66600],
+                zoom: 13.62,
+                pitch: 32,
+                bearing: -27.2
+            },
+            mapAnimation: 'flyTo',
+            rotateAnimation: false,
+            spinGlobe: false,
+            mapInteractive: true,
+            callback: '',
+            onChapterEnter: [
+                {
+                    layer: 'rocky-hill-parks',
+                    opacity: .9
+                },
+                {
+                    layer: 'rocky-hill-east-road',
+                    opacity: 0
+                },
+                {
+                    layer: 'rocky-hill-schools',
+                    opacity: .9
+                },
+                {
+                    layer: 'rocky-hill-town-campus',
+                    opacity: .9
+                },
+                {
+                    layer: 'rocky-hill-groceries-',
+                    opacity: 1
+                },
+
+            ],
+            onChapterExit: [
+                {
+                    layer: 'rocky-hill-parks',
+                    opacity: 0
+                },
+                {
+                    layer: 'rocky-hill-east-road',
+                    opacity: 0
+                },
+                {
+                    layer: 'rocky-hill-schools',
+                    opacity: 0
+                },
+                {
+                    layer: 'rocky-hill-town-campus',
+                    opacity: 0
+                },
+                {
+                    layer: 'rocky-hill-groceries-',
+                    opacity: 0
+                },
+            ]
+        },
+        {
+            id: 'feedback-3',
             alignment: 'left',
             hidden: false,
-            title: 'A good first step',
+            // title: 'Bike Routes Should Connect to Key Town Infrastructure',
             // image: 'images/streetpoint.png',
             caption: '',
-            //website: '<a href="https://www.native-land.ca" target="_blank">Native Land website</a>',
-            //author: 'Rudo Kemper, Digital Democracy',
-            //legend: '<span style="font-size: 0.85em;"><em>Indigenous community names on the map courtesy of Native Land Digital</em></span>',
-            description: "We believe all of the roads presented by the town should have bike lanes. Many of these lanes are important arteries connecting to town locations.",
+            description: "Residents believe a bike path should connect the east and west sides of town, so that residents of the west side have access to infrastructure on the east. While everyone agreed that an east-west connection was vital, different residents focused on Elm Street, West Street, and Brook Street.",
             location: {
                 center: [-72.66415, 41.65905],
                 zoom: 12.47,
@@ -361,36 +422,126 @@ var config = {
             callback: '',
             onChapterEnter: [
                 {
-                    layer: 'landuse',
-                    opacity: .75
-                },
-                {
-                    layer: 'possibleBikeFacilities',
-                    opacity: 1
-                },
-                {
-                    layer: 'Bikeway',
+                    layer: 'rocky-hill-parks',
                     opacity: 0
+                },
+                {
+                    layer: 'rocky-hill-schools',
+                    opacity: 0
+                },
+                {
+                    layer: 'rocky-hill-town-campus',
+                    opacity: 0
+                },
+                {
+                    layer: 'rocky-hill-groceries-',
+                    opacity: 0
+                },
+                {
+                    layer: 'rocky-hill-east-west-arteries',
+                    opacity: 1
                 }
+
             ],
             onChapterExit: [
                 {
-                    layer: 'feedback1',
+                    layer: 'rocky-hill-parks',
+                    opacity: 0
+                },
+                {
+                    layer: 'rocky-hill-schools',
+                    opacity: 0
+                },
+                {
+                    layer: 'rocky-hill-town-campus',
+                    opacity: 0
+                },
+                {
+                    layer: 'rocky-hill-groceries-',
+                    opacity: 0
+                },
+                {
+                    layer: 'rocky-hill-east-west-arteries',
                     opacity: 0
                 }
+
             ]
         },
         {
-            id: 'However',
-            alignment: 'left',
+            id: 'feedback-4',
+            alignment: 'right',
             hidden: false,
-            title: 'Further connections',
+            // title: 'Bike Routes Should Connect to Key Town Infrastructure',
             // image: 'images/streetpoint.png',
             caption: '',
-            //website: '<a href="https://www.native-land.ca" target="_blank">Native Land website</a>',
-            //author: 'Rudo Kemper, Digital Democracy',
-            //legend: '<span style="font-size: 0.85em;"><em>Indigenous community names on the map courtesy of Native Land Digital</em></span>',
-            description: "However, feedback from residents also suggested that additional infrastructure was needed. Here is the full list of roads identified by residents as important for bike lanes..",
+            description: "All participants in our listening session pointed out the importance of connecting to the Century Hills area. A third of the town, including many of its young residents, live in this area, but lack access to the downtown save by car and an infrequent bus.",
+            location: {
+                center: [-72.69061, 41.63732],
+                zoom: 15.34,
+                pitch: 18.84,
+                bearing: 132,
+                duration: 6000,
+            },
+            mapAnimation: 'flyTo',
+            rotateAnimation: false,
+            spinGlobe: false,
+            mapInteractive: true,
+            callback: '',
+            onChapterEnter: [
+                {
+                    layer: 'rocky-hill-parks',
+                    opacity: 0
+                },
+                {
+                    layer: 'rocky-hill-schools',
+                    opacity: 0
+                },
+                {
+                    layer: 'rocky-hill-town-campus',
+                    opacity: 0
+                },
+                {
+                    layer: 'rocky-hill-groceries-',
+                    opacity: 0
+                },
+                {
+                    layer: 'rocky-hill-east-west-arteries',
+                    opacity: 0
+                }
+
+            ],
+            onChapterExit: [
+                {
+                    layer: 'rocky-hill-parks',
+                    opacity: 0
+                },
+                {
+                    layer: 'rocky-hill-schools',
+                    opacity: 0
+                },
+                {
+                    layer: 'rocky-hill-town-campus',
+                    opacity: 0
+                },
+                {
+                    layer: 'rocky-hill-groceries-',
+                    opacity: 0
+                },
+                {
+                    layer: 'rocky-hill-east-west-arteries',
+                    opacity: 0
+                }
+
+            ]
+        },
+        {
+            id: 'Recommendations',
+            alignment: 'center',
+            hidden: false,
+           // title: 'Bike Routes Should Connect to Key Town Infrastructure',
+            // image: 'images/streetpoint.png',
+            caption: '',
+            description: "Based off these interviews, recommend the following areas be considered for bike lanes.",
             location: {
                 center: [-72.66415, 41.65905],
                 zoom: 12.47,
@@ -404,30 +555,49 @@ var config = {
             callback: '',
             onChapterEnter: [
                 {
-                    layer: 'landuse',
-                    opacity: .75
+                    layer: 'rocky-hill-parks',
+                    opacity: 0
                 },
                 {
-                    layer: 'possibleBikeFacilities',
-                    opacity: 1
+                    layer: 'rocky-hill-schools',
+                    opacity: 0
                 },
                 {
-                    layer: 'Bikeway',
-                    opacity: 1
+                    layer: 'rocky-hill-town-campus',
+                    opacity: 0
+                },
+                {
+                    layer: 'rocky-hill-groceries-',
+                    opacity: 0
                 }
+
             ],
             onChapterExit: [
                 {
-                    layer: 'feedback1',
+                    layer: 'rocky-hill-parks',
+                    opacity: 0
+                },
+                {
+                    layer: 'rocky-hill-schools',
+                    opacity: 0
+                },
+                {
+                    layer: 'rocky-hill-town-campus',
+                    opacity: 0
+                },
+                {
+                    layer: 'rocky-hill-groceries-',
                     opacity: 0
                 }
+               
             ]
         },
+        
         {
             id: 'Brook Street',
             alignment: 'left',
             hidden: false,
-            title: 'Brook Street',
+            title: 'Guard and Reserve Memorial Bridge',
             // image: 'images/streetpoint.png',
             caption: '',
             //website: '<a href="https://www.native-land.ca" target="_blank">Native Land website</a>',
@@ -445,13 +615,13 @@ var config = {
             spinGlobe: false,
             mapInteractive: true,
             callback: '',
-            onChapterEnter: [
-                {
-                    layer: 'landuse',
-                    opacity: .75
-                },
+            onChapterEnter: [              
                 {
                     layer: 'possibleBikeFacilities',
+                    opacity: 0
+                },
+                {
+                    layer: 'priority-route',
                     opacity: 1
                 },
                 {
@@ -461,7 +631,15 @@ var config = {
             ],
             onChapterExit: [
                 {
-                    layer: 'feedback1',
+                    layer: 'possibleBikeFacilities',
+                    opacity: 0
+                },
+                {
+                    layer: 'priority-route',
+                    opacity: 1
+                },
+                {
+                    layer: 'Bikeway',
                     opacity: 0
                 }
             ]
@@ -473,9 +651,6 @@ var config = {
             title: 'Brook Street',
             // image: 'images/streetpoint.png',
             caption: '',
-            //website: '<a href="https://www.native-land.ca" target="_blank">Native Land website</a>',
-            //author: 'Rudo Kemper, Digital Democracy',
-            //legend: '<span style="font-size: 0.85em;"><em>Indigenous community names on the map courtesy of Native Land Digital</em></span>',
             description: "<iframe width='400' height='275' src='https://www.youtube.com/embed/NUBukNqYlnQ' title='YouTube video player' frameborder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share' allowfullscreen></iframe> Luis Moreira describes how the interaction might be improved.",
             location: {
                 center: [-72.67675, 41.64158],
@@ -490,12 +665,12 @@ var config = {
             callback: '',
             onChapterEnter: [
                 {
-                    layer: 'landuse',
-                    opacity: .75
-                },
-                {
                     layer: 'possibleBikeFacilities',
                     opacity: 0
+                },
+                {
+                    layer: 'priority-route',
+                    opacity: 1
                 },
                 {
                     layer: 'Bikeway',
@@ -504,7 +679,15 @@ var config = {
             ],
             onChapterExit: [
                 {
-                    layer: 'feedback1',
+                    layer: 'possibleBikeFacilities',
+                    opacity: 0
+                },
+                {
+                    layer: 'priority-route',
+                    opacity: 1
+                },
+                {
+                    layer: 'Bikeway',
                     opacity: 0
                 }
             ]
@@ -516,15 +699,12 @@ var config = {
             title: 'Brook Street',
             // image: 'images/streetpoint.png',
             caption: '',
-            //website: '<a href="https://www.native-land.ca" target="_blank">Native Land website</a>',
-            //author: 'Rudo Kemper, Digital Democracy',
-            //legend: '<span style="font-size: 0.85em;"><em>Indigenous community names on the map courtesy of Native Land Digital</em></span>',
             description: "<iframe width='400' height='275' src='https://www.youtube.com/embed/NUBukNqYlnQ' title='YouTube video player' frameborder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share' allowfullscreen></iframe> Luis Moreira describes how the interaction might be improved.",
             location: {
-                center: [-72.67768, 41.64465],
-                zoom: 18.94,
-                pitch: 0,
-                bearing: 0,
+                center: [-72.66859, 41.64446],
+                zoom: 14.44,
+                pitch: 56.13,
+                bearing: 72.80,
                 duration: 60000
             },
             mapAnimation: 'flyTo',
@@ -533,13 +713,14 @@ var config = {
             mapInteractive: true,
             callback: '',
             onChapterEnter: [
-                {
-                    layer: 'landuse',
-                    opacity: .75
-                },
+               
                 {
                     layer: 'possibleBikeFacilities',
                     opacity: 0
+                },
+                {
+                    layer: 'priority-route',
+                    opacity: 1
                 },
                 {
                     layer: 'Bikeway',
@@ -548,10 +729,308 @@ var config = {
             ],
             onChapterExit: [
                 {
-                    layer: 'feedback1',
+                    layer: 'possibleBikeFacilities',
+                    opacity: 0
+                },
+                {
+                    layer: 'priority-route',
+                    opacity: 1
+                },
+                {
+                    layer: 'Bikeway',
                     opacity: 0
                 }
             ]
-        }
+        },
+        {
+            id: 'Brook Street-4',
+            alignment: 'left',
+            hidden: false,
+            title: 'Brook Street',
+            // image: 'images/streetpoint.png',
+            caption: '',
+            description: "For a west-east artery, Brooks Street connects a population center in Century Hills to the east end of town and multiple parks.",
+            location: {
+                center: [-72.65930, 41.64126],
+                zoom: 14.35,
+                pitch: 0,
+                bearing: -8.80,
+                duration: 6000
+            },
+            mapAnimation: 'flyTo',
+            rotateAnimation: false,
+            spinGlobe: false,
+            mapInteractive: true,
+            callback: '',
+            onChapterEnter: [
+                {
+                    layer: 'rocky-hill-parks',
+                    opacity: 0
+                },
+                {
+                    layer: 'rocky-hill-schools',
+                    opacity: 0
+                },
+                {
+                    layer: 'rocky-hill-town-campus',
+                    opacity: 0
+                },
+                {
+                    layer: 'Bikeway',
+                    opacity: 0
+                },
+                {
+                    layer: 'possibleBikeFacilities',
+                    opacity: 0
+                },
+                {
+                    layer: 'rocky-hill-groceries-',
+                    opacity: 0
+                },
+                {
+                    layer: 'priority-route',
+                    opacity: 1
+                    
+                }
+            ],
+            onChapterExit: [
+                {
+                    layer: 'rocky-hill-parks',
+                    opacity: 0
+                },
+                {
+                    layer: 'rocky-hill-schools',
+                    opacity: 0
+                },
+                {
+                    layer: 'Bikeway',
+                    opacity: 0
+                },
+                {
+                    layer: 'rocky-hill-town-campus',
+                    opacity: 0
+                },
+                {
+                    layer: 'rocky-hill-groceries-',
+                    opacity: 0
+                },
+                {
+                    layer: 'priority-route',
+                    opacity: 0
+
+                },
+                {
+                    layer: 'possibleBikeFacilities',
+                    opacity: 0
+                },
+
+            ]
+        },
+        {
+            id: 'East Side',
+            alignment: 'left',
+            hidden: false,
+            title: 'East Side',
+            // image: 'images/streetpoint.png',
+            caption: '',
+            description: "Finally, we believe a road connecting the east-west artery to parks, the town campus, and the school would be most useful. A path winding through Old Forge Road, Dividend Road, Pratt Street, Riverside, and Parsonage street would meet that goal.",
+            location: {
+                center: [-72.64482, 41.65113],
+                zoom: 14.48,
+                pitch: 52.84,
+                bearing: 0
+            },
+            mapAnimation: 'flyTo',
+            rotateAnimation: false,
+            spinGlobe: false,
+            mapInteractive: true,
+            callback: '',
+            onChapterEnter: [
+                {
+                    layer: 'rocky-hill-parks',
+                    opacity: 0
+                },
+                {
+                    layer: 'rocky-hill-schools',
+                    opacity: 0
+                },
+                {
+                    layer: 'rocky-hill-town-campus',
+                    opacity: 0
+                },
+                {
+                    layer: 'rocky-hill-groceries-',
+                    opacity: 0
+                },
+                {
+                    layer: 'rocky-hill-east-west-arteries',
+                    opacity: 0              
+                },
+                {
+                    layer: 'priority-route',
+                    opacity: 1
+                }
+
+                
+            ],
+            onChapterExit: [
+                {
+                    layer: 'rocky-hill-parks',
+                    opacity: 0
+                },
+                {
+                    layer: 'rocky-hill-schools',
+                    opacity: 0
+                },
+                {
+                    layer: 'rocky-hill-town-campus',
+                    opacity: 0
+                },
+                {
+                    layer: 'rocky-hill-groceries-',
+                    opacity: 0
+                },
+                {
+                    layer: 'priority-route',
+                    opacity: 0
+                }
+            ]
+        },
+
+        {
+            id: 'Summary',
+            alignment: 'right',
+            hidden: false,
+            caption: '',
+            title: 'Summary',
+            description: "While it is important to link the entire town with bike route, the identified streets would be a good step toward linking the eastern and western parts of town, and allowing people in a high-density neighborhood to access town infrastructure, including parks, the town campus, and schools.",
+            location: {
+                center: [-72.66415, 41.65905],
+                zoom: 12.47,
+                pitch: 0,
+                bearing: 0
+            },
+            mapAnimation: 'flyTo',
+            rotateAnimation: false,
+            spinGlobe: false,
+            mapInteractive: true,
+            callback: '',
+            onChapterEnter: [
+                {
+                    layer: 'rocky-hill-parks',
+                    opacity: .9
+                },
+                {
+                    layer: 'priority-route',
+                    opacity: 1
+                },
+                {
+                    layer: 'rocky-hill-schools',
+                    opacity: .9
+                },
+                {
+                    layer: 'rocky-hill-town-campus',
+                    opacity: .9
+                },
+                {
+                    layer: 'rocky-hill-groceries-',
+                    opacity: 1
+                },
+
+
+            ],
+            onChapterExit: [
+                {
+                    layer: 'rocky-hill-parks',
+                    opacity: 0
+                },
+                {
+                    layer: 'priority-route',
+                    opacity: 0
+                },
+                {
+                    layer: 'rocky-hill-schools',
+                    opacity: 0
+                },
+                {
+                    layer: 'rocky-hill-town-campus',
+                    opacity: 0
+                },
+                {
+                    layer: 'rocky-hill-groceries-',
+                    opacity: 0
+                },
+            ]
+        },
+
+        {
+            id: 'key locations + original',
+            alignment: 'left',
+            hidden: false,
+            title: 'A good first step',
+            // image: 'images/streetpoint.png',
+            caption: '',
+            description: "We believe all of the roads presented by the town should have bike lanes. Many of these lanes are important arteries connecting to town locations.",
+            location: {
+                center: [-72.66415, 41.65905],
+                zoom: 13,
+                pitch: 0,
+                bearing: 0,
+                duration: 10000
+            },
+            mapAnimation: 'flyTo',
+            rotateAnimation: false,
+            spinGlobe: false,
+            mapInteractive: true,
+            callback: '',
+            onChapterEnter: [
+                {
+                    layer: 'possibleBikeFacilities',
+                    opacity: 1
+                }
+            ],
+            onChapterExit: [
+                {
+                    layer: 'possibleBikeFacilities',
+                    opacity: 0
+                }
+                
+            ]
+        },
+        {
+            id: 'However',
+            alignment: 'left',
+            hidden: false,
+            title: 'Further connections',
+            // image: 'images/streetpoint.png',
+            caption: '',
+            //website: '<a href="https://www.native-land.ca" target="_blank">Native Land website</a>',
+            //author: 'Rudo Kemper, Digital Democracy',
+            //legend: '<span style="font-size: 0.85em;"><em>Indigenous community names on the map courtesy of Native Land Digital</em></span>',
+            description: "However, feedback from residents also suggested that additional infrastructure was needed. In the long term, we believe a web of bike lines roads should connect all the town.",
+            location: {
+                center: [-72.66415, 41.65905],
+                zoom: 12.47,
+                pitch: 0,
+                bearing: 0
+            },
+            mapAnimation: 'flyTo',
+            rotateAnimation: false,
+            spinGlobe: false,
+            mapInteractive: true,
+            callback: '',
+            onChapterEnter: [
+                {
+                    layer: 'Bikeway',
+                    opacity: 1
+                }
+            ],
+            onChapterExit: [
+                {
+                    layer: 'Bikeway',
+                    opacity: 0
+                }
+            ]
+        },
     ]
 };
