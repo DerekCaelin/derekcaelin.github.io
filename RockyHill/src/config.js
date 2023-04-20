@@ -816,7 +816,7 @@ var config = {
                 },
                 {
                     layer: 'priority-route',
-                    opacity: 0
+                    opacity: 1
 
                 },
                 {
@@ -892,7 +892,7 @@ var config = {
                 },
                 {
                     layer: 'priority-route',
-                    opacity: 0
+                    opacity: 1
                 }
             ]
         },
