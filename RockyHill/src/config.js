@@ -1004,7 +1004,7 @@ var config = {
             title: 'Further connections',
             // image: 'images/streetpoint.png',
             caption: '',
-            description: "However, feedback from residents also suggested that additional infrastructure was needed. In the long term, we believe a web of bike lines roads should connect all the town. We have proposed a long term plan called the <a href="https://www.google.com/maps/d/u/0/viewer?mid=1F28TEuvdAk-rDRs7PFudtHMzlYSSR5-x&ll=41.66105554034413%2C-72.6553339&z=13">Rocky Hill Bike Way</a>.",
+            description: "However, feedback from residents also suggested that additional infrastructure was needed. In the long term, we believe a web of bike lines roads should connect all the town. We have proposed a long term plan called the <a href='https://www.google.com/maps/d/u/0/viewer?mid=1F28TEuvdAk-rDRs7PFudtHMzlYSSR5-x&ll=41.66105554034413%2C-72.6553339&z=13'>Rocky Hill Bike Way</a>.",
             location: {
                 center: [-72.66415, 41.65905],
                 zoom: 12.47,
