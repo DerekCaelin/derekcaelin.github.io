@@ -135,7 +135,7 @@ var config = {
             title: 'Walk Bike Feedback',
             image: 'images/feedback1zoom.jpg',
             caption: '',
-            description: "We brought the plans to various citizen groups for their feedback. First, we spoke to representatives from Walk-Bike Rocky Hill, who submitted a proposal for a bike lanes to the town in 2020.",
+            description: "We brought the plans to various citizen groups for their feedback. First, we spoke to representatives from Walk-Bike Rocky Hill, who submitted a proposal for bike lanes to the town in 2020.",
             location: {
                 center: [-72.66415, 41.65905],
                 zoom: 12.47,
@@ -300,7 +300,7 @@ var config = {
             //website: '<a href="https://www.native-land.ca" target="_blank">Native Land website</a>',
             //author: 'Rudo Kemper, Digital Democracy',
             //legend: '<span style="font-size: 0.85em;"><em>Indigenous community names on the map courtesy of Native Land Digital</em></span>',
-            description: "Participants agreed that the critical function of biking infrastructure (and sidewalks) is to make it possible for bicyclists to navigate from their homes to important facilities: town buildings, religious buildings, parks, and grocery stores.",
+            description: "Participants agreed that the critical function of biking infrastructure (and sidewalks) is to make it possible for bicyclists to navigate from their homes to important facilities: places to buy food, town buildings, schools, parks, and cultural buildings.",
             location: {
                 center: [-72.66415, 41.65905],
                 zoom: 12.47,
@@ -541,7 +541,7 @@ var config = {
            // title: 'Bike Routes Should Connect to Key Town Infrastructure',
             // image: 'images/streetpoint.png',
             caption: '',
-            description: "Based off these interviews, recommend the following areas be considered for bike lanes.",
+            description: "Based off these interviews, we recommend the following areas be considered for bike lanes.",
             location: {
                 center: [-72.66415, 41.65905],
                 zoom: 12.47,
@@ -998,16 +998,13 @@ var config = {
             ]
         },
         {
-            id: 'However',
+            id: 'Rocky Hill Bike Way',
             alignment: 'left',
             hidden: false,
             title: 'Further connections',
             // image: 'images/streetpoint.png',
             caption: '',
-            //website: '<a href="https://www.native-land.ca" target="_blank">Native Land website</a>',
-            //author: 'Rudo Kemper, Digital Democracy',
-            //legend: '<span style="font-size: 0.85em;"><em>Indigenous community names on the map courtesy of Native Land Digital</em></span>',
-            description: "However, feedback from residents also suggested that additional infrastructure was needed. In the long term, we believe a web of bike lines roads should connect all the town.",
+            description: "However, feedback from residents also suggested that additional infrastructure was needed. In the long term, we believe a web of bike lines roads should connect all the town. We have proposed a long term plan called the <a href="https://www.google.com/maps/d/u/0/viewer?mid=1F28TEuvdAk-rDRs7PFudtHMzlYSSR5-x&ll=41.66105554034413%2C-72.6553339&z=13">Rocky Hill Bike Way</a>.",
             location: {
                 center: [-72.66415, 41.65905],
                 zoom: 12.47,
