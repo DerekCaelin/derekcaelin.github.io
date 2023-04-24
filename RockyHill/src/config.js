@@ -651,7 +651,7 @@ var config = {
             title: 'Brook Street',
             // image: 'images/streetpoint.png',
             caption: '',
-            description: "<iframe width='400' height='275' src='https://www.youtube.com/embed/NUBukNqYlnQ' title='YouTube video player' frameborder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share' allowfullscreen></iframe> Luis Moreira describes how the interaction might be improved.",
+            description: "<iframe width='400' height='275' src='https://www.youtube.com/embed/NUBukNqYlnQ' title='YouTube video player' frameborder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share' allowfullscreen></iframe> Luis Moreira describes how the intersection might be improved.",
             location: {
                 center: [-72.67675, 41.64158],
                 zoom: 18.94,
