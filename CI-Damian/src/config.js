@@ -1081,7 +1081,7 @@ var config = {
                  {
                      layer: 'danzig1',
                      opacity: 1,
-                     duration: 2000
+                     duration: 1000
                 },
                 {
                     layer: 'danzig2',
@@ -1090,12 +1090,12 @@ var config = {
                 {
                     layer: 'Action-1-Lines',
                     opacity: 0,
-                    duration: 2000
+                    duration: 1000
                 },
                 {
                     layer: 'Mudbank',
                     opacity: 0,
-                    duration: 2000
+                    duration: 1000
                 }
             ],
             onChapterExit: [
@@ -1210,6 +1210,16 @@ var config = {
                     duration: 1000
                 },
                 {
+                    layer: 'Action-1-Lines-a',
+                    opacity: 1,
+                    duration: 1000
+                },
+                {
+                    layer: 'Action-1-Lines-b',
+                    opacity: 1,
+                    duration: 1000
+                },
+                {
                     layer: 'Action-2-Lines',
                     opacity: 1,
                     duration: 1000
@@ -1246,7 +1256,7 @@ var config = {
         },
         {
             id: 'danzig-revised-4',
-            alignment: 'left',
+            alignment: 'right',
             hidden: false,
             //title: 'Danzig Collapse',
             image: 'images/engineering-guildelines-3.bmp',
