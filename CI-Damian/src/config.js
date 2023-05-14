@@ -900,7 +900,7 @@ var config = {
                 // }
             ]
         },
-        
+        /*
         {
             id: 'solutions-1',
             alignment: 'center',
@@ -1052,6 +1052,267 @@ var config = {
                }
             ]
         },
+
+       */
+        {
+            id: 'danzig-revised-1',
+            alignment: 'left',
+            hidden: false,
+            //title: 'Danzig Collapse',
+            //image: 'images/After.jpg',
+            //caption: 'S',
+            //website: '',
+            // author: '',
+            //legend: '',
+            description: "The flooding of Danzig signaled the advance of a mudbank. In May 2023, the mudbank itself arrived, signalling the need for action further up the coast.",
+            location: {
+                center: [-57.86285, 6.66452],
+                zoom: 14,
+                pitch: 0,
+                bearing: 44.8,
+                duration: 5000
+            },
+            mapAnimation: 'flyTo',
+            rotateAnimation: false,
+            spinGlobe: false,
+            mapInteractive: true,
+            callback: '',
+            onChapterEnter: [
+                 {
+                     layer: 'danzig1',
+                     opacity: 1,
+                     duration: 2000
+                },
+                {
+                    layer: 'danzig2',
+                    opacity: 0
+                },
+                {
+                    layer: 'Action-1-Lines',
+                    opacity: 0,
+                    duration: 2000
+                },
+                {
+                    layer: 'Mudbank',
+                    opacity: 0,
+                    duration: 2000
+                }
+            ],
+            onChapterExit: [
+                {
+                     layer: 'danzig1',
+                     opacity: 0
+                }
+            ]
+        },
+        {
+            id: 'danzig-revised-2',
+            alignment: 'left',
+            hidden: true,
+            //title: 'Danzig Collapse',
+            //image: 'images/After.jpg',
+            //caption: 'S',
+            //website: '',
+            // author: '',
+            //legend: '',
+            //description: "The flooding of Danzig signaled the advance of a mudbank. In May 2023, the mudbank itself arrived, signalling the need for action further up the coast.",
+            location: {
+                center: [-57.88877, 6.68524],
+                zoom: 13.63,
+                pitch: 0,
+                bearing: 0,
+                duration: 5000
+            },
+            mapAnimation: 'flyTo',
+            rotateAnimation: false,
+            spinGlobe: false,
+            mapInteractive: true,
+            callback: '',
+            onChapterEnter: [
+                {
+                    layer: 'danzig2',
+                    opacity: 1,
+                    duration: 1000
+                },
+                {
+                    layer: 'Action-1-Title',
+                    opacity: 1,
+                    duration: 1000
+                },
+                {
+                    layer: 'Action-1-Description',
+                    opacity: 1,
+                    duration: 1000
+                },
+                {
+                    layer: 'Action-1-Lines-a',
+                    opacity: 1,
+                    duration: 1000
+                },
+                {
+                    layer: 'Action-1-Lines-b',
+                    opacity: 1,
+                    duration: 1000
+                },
+                {
+                    layer: 'Mudbank',
+                    opacity: 1,
+                    duration: 1000
+                }
+            ],
+            onChapterExit: [
+                
+                {
+                    layer: 'Action-1-Title',
+                    opacity: 0,
+                    duration: 1000
+                },
+                 {
+                     layer: 'Action-1-Description',
+                    opacity: 0,
+                    duration: 1000
+                },            
+            ]
+        },
+        {
+            id: 'danzig-revised-3',
+            alignment: 'left',
+            hidden: true,
+            //title: 'Danzig Collapse',
+            //image: 'images/After.jpg',
+            //caption: 'S',
+            //website: '',
+            // author: '',
+            //legend: '',
+            //description: "The flooding of Danzig signaled the advance of a mudbank. In May 2023, the mudbank itself arrived, signalling the need for action further up the coast.",
+            location: {
+                center: [-57.88877, 6.68524],
+                zoom: 13.63,
+                pitch: 0,
+                bearing: 0,
+                duration: 5000
+            },
+            mapAnimation: 'flyTo',
+            rotateAnimation: false,
+            spinGlobe: false,
+            mapInteractive: true,
+            callback: '',
+            onChapterEnter: [
+              
+                {
+                    layer: 'Action-2-Title',
+                    opacity: 1,
+                    duration: 1000
+                },
+                {
+                    layer: 'Action-2-Description',
+                    opacity: 1,
+                    duration: 1000
+                },
+                {
+                    layer: 'Action-2-Lines',
+                    opacity: 1,
+                    duration: 1000
+                }
+            ],
+            onChapterExit: [
+               
+                {
+                    layer: 'Action-2-Title',
+                    opacity: 0,
+                    duration: 1000
+                },
+                {
+                    layer: 'Action-2-Description',
+                    opacity: 0,
+                    duration: 1000
+                },
+                {
+                    layer: 'Action-1-Lines-a',
+                    opacity: 0,
+                    duration: 1000
+                },
+                {
+                    layer: 'Action-1-Lines-b',
+                    opacity: 0,
+                    duration: 1000
+                },
+                {
+                    layer: 'Action-2-Lines',
+                    opacity: 0,
+                    duration: 1000
+                }
+            ]
+        },
+        {
+            id: 'danzig-revised-4',
+            alignment: 'left',
+            hidden: true,
+            //title: 'Danzig Collapse',
+            //image: 'images/After.jpg',
+            //caption: 'S',
+            //website: '',
+            // author: '',
+            //legend: '',
+            //description: "The flooding of Danzig signaled the advance of a mudbank. In May 2023, the mudbank itself arrived, signalling the need for action further up the coast.",
+            location: {
+                center: [-57.88877, 6.68524],
+                zoom: 13.63,
+                pitch: 0,
+                bearing: 0,
+                duration: 5000
+            },
+            mapAnimation: 'flyTo',
+            rotateAnimation: false,
+            spinGlobe: false,
+            mapInteractive: true,
+            callback: '',
+            onChapterEnter: [
+                
+                {
+                    layer: 'Action-3-Title',
+                    opacity: 1,
+                    duration: 1000
+                },
+                {
+                    layer: 'Action-3-Description',
+                    opacity: 1,
+                    duration: 1000
+                },
+                {
+                    layer: 'Action-3-Lines',
+                    opacity: 1,
+                    duration: 1000
+                }
+            ],
+            onChapterExit: [
+                {
+                    layer: 'danzig2',
+                    opacity: 0
+                },
+                {
+                    layer: 'Action-3-Title',
+                    opacity: 0,
+                    duration: 1000
+                },
+                {
+                    layer: 'Action-3-Description',
+                    opacity: 0,
+                    duration: 1000
+                },
+                {
+                    layer: 'Action-3-Lines',
+                    opacity: 0,
+                    duration: 1000
+                },
+                {
+                    layer: 'Mudbank',
+                    opacity: 0,
+                    duration: 1000
+                }
+            ]
+        },
+        
         {
             id: 'finish',
             alignment: 'center',
