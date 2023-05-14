@@ -1247,9 +1247,9 @@ var config = {
         {
             id: 'danzig-revised-4',
             alignment: 'left',
-            hidden: true,
+            hidden: false,
             //title: 'Danzig Collapse',
-            //image: 'images/After.jpg',
+            image: 'images/engineering-guildelines-3.bmp',
             //caption: 'S',
             //website: '',
             // author: '',
