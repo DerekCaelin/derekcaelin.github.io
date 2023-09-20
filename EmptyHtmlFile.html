@@ -1,0 +1,253 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Filter symbols by toggling checkboxes</title>
+    <meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no">
+    <link href="https://api.mapbox.com/mapbox-gl-js/v2.14.1/mapbox-gl.css" rel="stylesheet">
+    <script src="https://api.mapbox.com/mapbox-gl-js/v2.14.1/mapbox-gl.js"></script>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
+        #map {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <style>
+
+        .filter-ctrl {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            z-index: 1;
+        }
+
+            .filter-ctrl input[type='text'] {
+                font: 12px/20px 'Helvetica Neue', Arial, Helvetica, sans-serif;
+                width: 100%;
+                border: 0;
+                background-color: #fff;
+                margin: 0;
+                color: rgba(0, 0, 0, 0.5);
+                padding: 10px;
+                box-shadow: 0 0 0 2px rgba(0, 0, 0, 0.1);
+                border-radius: 3px;
+                width: 180px;
+            }
+
+        .filter-group {
+            font: 12px/20px 'Helvetica Neue', Arial, Helvetica, sans-serif;
+            font-weight: 600;
+            position: absolute;
+            top: 60px;
+            right: 10px;
+            z-index: 1;
+            border-radius: 3px;
+            width: 120px;
+            color: #fff;
+        }
+
+            .filter-group input[type='checkbox']:first-child + label {
+                border-radius: 3px 3px 0 0;
+            }
+
+            .filter-group label:last-child {
+                border-radius: 0 0 3px 3px;
+                border: none;
+            }
+
+            .filter-group input[type='checkbox'] {
+                display: none;
+            }
+
+                .filter-group input[type='checkbox'] + label {
+                    background-color: #3386c0;
+                    display: block;
+                    cursor: pointer;
+                    padding: 10px;
+                    border-bottom: 1px solid rgba(0, 0, 0, 0.25);
+                }
+
+                .filter-group input[type='checkbox'] + label {
+                    background-color: #3386c0;
+                    text-transform: capitalize;
+                }
+
+                    .filter-group input[type='checkbox'] + label:hover,
+                    .filter-group input[type='checkbox']:checked + label {
+                        background-color: #4ea0da;
+                    }
+
+                        .filter-group input[type='checkbox']:checked + label:before {
+                            content: '✔';
+                            margin-right: 5px;
+                        }
+    </style>
+    <div id="map"></div>
+    <div class="filter-ctrl">
+        <input id="filter-input" type="text" name="filter" placeholder="What interests you?">
+    </div>
+    <nav id="filter-group" class="filter-group"></nav>
+
+    <script>mapboxgl.accessToken = 'pk.eyJ1IjoidGVycmFzbyIsImEiOiJjbGZtbjJuaHkwZGV2M3BxZGV4bzh1eW9tIn0.hF3oI29U0DDLoaDJ0sB0Uw';
+
+        const filterGroup = document.getElementById('filter-group');
+        const filterInput = document.getElementById('filter-input');
+        
+
+        const map = new mapboxgl.Map({
+            container: 'map',
+            // Choose from Mapbox's core styles, or make your own style with Mapbox Studio
+            style: 'mapbox://styles/terraso/clmhuh0aq03qi01p7dtg0c8ny',
+            // style: 'mapbox://styles/mapbox/streets-v12',
+            center: [35.6238, -15.9339],
+            zoom: 11.15
+        });
+
+        
+
+        map.on('load', () => {
+
+            const pointsLayer = map.getLayer('dummy-finance-data-points');
+            const vectorLayer = map.getLayer('dummy-finance-data-vectors');
+
+            const features = map.queryRenderedFeatures({
+                layers: ['dummy-finance-data-points', 'dummy-finance-data-vectors']
+            });
+
+            filterInput.addEventListener('keyup', (e) => {
+                // If the input value matches a layerID set
+                // it's visibility to 'visible' or else hide it.
+               
+                const value = e.target.value
+               
+
+               /* if (value == "") {
+                    map.setFilter('dummy-finance-data-points', null);
+                    map.setFilter('dummy-finance-data-vectors', null);
+                }*/
+                //searchFilter = value;
+                map.setFilter('dummy-finance-data-points',  ['all',['==', 'name', value]]);
+                //map.setFilter('dummy-finance-data-vectors', ['==', ['get', 'name'], ['literal',value]]);
+                console.log(value);
+                
+            });
+
+            
+            //toggle checkboxes
+            const changeCheck = (arg) => {
+                const thingToChange = arg.target.innerText.toLowerCase();
+                const checkboxToChange = document.getElementById(thingToChange)
+                if (checkboxToChange.checked) {
+                    checkboxToChange.checked = false;
+                }
+                else {
+                    checkboxToChange.checked = true;
+                }
+            }
+
+            // this function will be called whenever a checkbox is toggled
+            const updateLayerFilter = (arg) => {
+
+                const thingToFilter = arg.target.innerText.toLowerCase();
+                // get an array of layer names that corresponds to the currently checked checkboxes
+                const checkedFeatures = [...document.getElementsByTagName('input')]
+                    .filter((el) => el.checked)
+                    .map((el) => el.id);
+                //checkboxFilter = checkedFeatures;
+                // filter the layer
+
+                map.setFilter('dummy-finance-data-points', ['in', 'type', ...checkedFeatures]);
+                map.setFilter('dummy-finance-data-vectors', ['in', 'type', ...checkedFeatures]);
+            };
+
+            //make an array of project types
+            const projectTypes = [];
+
+            //look at all the features of the two layers, and put unique values in the project Types array
+            features.forEach((item) => {
+                const projectType = item.properties.type;
+                if (!projectTypes.includes(projectType)) projectTypes.push(projectType);
+
+            });
+
+
+
+            //Add checkbox and label elements for the layer.
+            for (projectType in projectTypes) {
+                const input = document.createElement('input');
+                input.type = 'checkbox';
+                input.id = projectTypes[projectType];
+                input.checked = true;
+                filterGroup.appendChild(input);
+
+                const label = document.createElement('label');
+                //    label.setAttribute('for', 'dummy-finance-data-vectors');
+                label.textContent = input.id;
+                filterGroup.appendChild(label);
+
+            }
+
+            // filterGroup.addEventListener('click', console.log("click!"));
+            filterGroup.addEventListener('click', changeCheck, "thing!");
+            filterGroup.addEventListener('click', updateLayerFilter, "thing")
+
+
+
+
+        });
+
+
+        // When a click event occurs on a feature in the states layer,
+        // open a popup at the location of the click, with description
+        // HTML from the click event's properties.
+        map.on('click', 'dummy-finance-data-vectors', (e) => {
+            new mapboxgl.Popup()
+                .setLngLat(e.lngLat)
+                .setHTML("<b>" + e.features[0].properties.name + "</b> <p>" + "Type: " + e.features[0].properties.type + "<p>" + e.features[0].properties.description)
+                .addTo(map);
+        });
+
+        map.on('click', 'dummy-finance-data-points', (e) => {
+            new mapboxgl.Popup()
+                .setLngLat(e.lngLat)
+                .setHTML("<b>" + e.features[0].properties.name + "</b> <p>" + "Type: " + e.features[0].properties.type + "<p>" + e.features[0].properties.description)
+                .addTo(map);
+        });
+
+        // Change the cursor to a pointer when
+        // the mouse is over the states layer.
+        map.on('mouseenter', 'dummy-finance-data-vectors', () => {
+            map.getCanvas().style.cursor = 'pointer';
+        });
+
+        // Change the cursor back to a pointer
+        // when it leaves the states layer.
+        map.on('mouseleave', 'dummy-finance-data-vectors', () => {
+            map.getCanvas().style.cursor = '';
+        });
+
+        // Change the cursor to a pointer when
+        // the mouse is over the states layer.
+        map.on('mouseenter', 'dummy-finance-data-points', () => {
+            map.getCanvas().style.cursor = 'pointer';
+        });
+
+        // Change the cursor back to a pointer
+        // when it leaves the states layer.
+        map.on('mouseleave', 'dummy-finance-data-points', () => {
+            map.getCanvas().style.cursor = '';
+        });</script>
+
+</body>
+</html>
+
+
